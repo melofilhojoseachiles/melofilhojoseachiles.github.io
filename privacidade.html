@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade | Achiles Melo Advocacia</title>
+<meta name="description" content="Política de Privacidade da Achiles Melo Advocacia. Saiba como coletamos, usamos e protegemos seus dados pessoais conforme a LGPD.">
+<link rel="canonical" href="https://achilesmelo.adv.br/privacidade">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://achilesmelo.adv.br/privacidade">
+<meta property="og:title" content="Política de Privacidade | Achiles Melo Advocacia">
+<meta property="og:description" content="Saiba como coletamos, usamos e protegemos seus dados pessoais conforme a LGPD.">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --black:       #0D0D0D;
+  --black-2:     #161616;
+  --black-3:     #1F1F1F;
+  --gold:        #C9A84C;
+  --gold-light:  #E2C67A;
+  --gold-dim:    rgba(201,168,76,0.12);
+  --gold-border: rgba(201,168,76,0.28);
+  --white:       #FFFFFF;
+  --gray-2:      #A0A0A0;
+  --gray-3:      #555555;
+  --font:        'Inter', sans-serif;
+}
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font); background: var(--black); color: var(--white);
+  line-height: 1.6; -webkit-font-smoothing: antialiased;
+}
+a { color: var(--gold); text-decoration: none; }
+a:hover { color: var(--gold-light); }
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.875rem 2rem;
+  background: rgba(13,13,13,0.92); backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+.nav-logo img { height: 36px; width: auto; }
+.nav-back {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 13px; font-weight: 600; color: var(--gray-2);
+  transition: color .2s;
+}
+.nav-back:hover { color: var(--white); }
+.nav-back svg { flex-shrink: 0; }
+
+/* LAYOUT */
+.page-wrap {
+  max-width: 760px; margin: 0 auto;
+  padding: 7rem 2rem 5rem;
+}
+
+/* HEADER */
+.doc-header {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: 2.5rem;
+}
+.doc-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem;
+}
+.doc-title {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  font-weight: 800; line-height: 1.1; letter-spacing: -0.025em;
+  color: var(--white); margin-bottom: 1rem;
+}
+.doc-meta {
+  display: flex; flex-wrap: wrap; gap: 1rem;
+}
+.doc-meta-item {
+  font-size: 13px; color: var(--gray-2);
+  display: flex; align-items: center; gap: 6px;
+}
+.doc-meta-item svg { flex-shrink: 0; }
+
+/* TOC */
+.toc {
+  background: var(--black-2);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 10px 10px 0;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 3rem;
+}
+.toc-title {
+  font-size: 12px; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--gray-2); margin-bottom: 0.875rem;
+}
+.toc-list { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+.toc-list li a {
+  font-size: 13.5px; color: var(--gray-2);
+  transition: color .2s; display: flex; align-items: center; gap: 6px;
+}
+.toc-list li a:hover { color: var(--gold); }
+.toc-list li a::before {
+  content: ''; width: 4px; height: 4px; border-radius: 50%;
+  background: var(--gold-border); flex-shrink: 0; transition: background .2s;
+}
+.toc-list li a:hover::before { background: var(--gold); }
+
+/* CONTENT */
+.doc-section { margin-bottom: 3rem; }
+.doc-section:last-child { margin-bottom: 0; }
+
+.doc-h2 {
+  font-size: 1.2rem; font-weight: 700; color: var(--white);
+  margin-bottom: 1rem; padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  display: flex; align-items: center; gap: 10px;
+}
+.doc-h2-num {
+  width: 26px; height: 26px; border-radius: 6px; flex-shrink: 0;
+  background: var(--gold-dim); border: 1px solid var(--gold-border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 700; color: var(--gold);
+}
+.doc-p {
+  font-size: 14.5px; color: var(--gray-2); line-height: 1.85;
+  margin-bottom: 1rem;
+}
+.doc-p:last-child { margin-bottom: 0; }
+.doc-p strong { color: var(--white); font-weight: 600; }
+
+.doc-list {
+  list-style: none; margin: 0.75rem 0 1rem; padding: 0;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.doc-list li {
+  font-size: 14px; color: var(--gray-2); line-height: 1.7;
+  display: flex; align-items: flex-start; gap: 10px;
+}
+.doc-list li::before {
+  content: ''; width: 5px; height: 5px; border-radius: 50%;
+  background: var(--gold); flex-shrink: 0; margin-top: 9px;
+}
+
+/* HIGHLIGHT BOX */
+.highlight-box {
+  background: var(--black-2);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 10px; padding: 1.25rem 1.5rem;
+  margin: 1rem 0;
+}
+.highlight-box p {
+  font-size: 13.5px; color: var(--gray-2); line-height: 1.75; margin: 0;
+}
+.highlight-box p + p { margin-top: 0.6rem; }
+.highlight-box strong { color: var(--white); font-weight: 600; }
+
+/* CONTACT BOX */
+.contact-box {
+  background: var(--gold-dim);
+  border: 1px solid var(--gold-border);
+  border-radius: 10px; padding: 1.25rem 1.5rem;
+  margin-top: 1rem;
+}
+.contact-box p {
+  font-size: 13.5px; color: var(--gray-2); line-height: 1.75; margin: 0;
+}
+.contact-box p + p { margin-top: 0.5rem; }
+.contact-box a { color: var(--gold); }
+.contact-box strong { color: var(--white); font-weight: 600; }
+
+/* FOOTER */
+footer {
+  background: var(--black-2);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 2rem;
+  text-align: center;
+}
+footer p { font-size: 12px; color: var(--gray-3); line-height: 1.7; }
+footer a { font-size: 12px; color: var(--gray-3); }
+footer a:hover { color: var(--gold); }
+.footer-links { display: flex; justify-content: center; gap: 1.5rem; margin-top: 0.5rem; flex-wrap: wrap; }
+
+/* RESPONSIVE */
+@media (max-width: 640px) {
+  nav { padding: 0.75rem 1rem; }
+  .page-wrap { padding: 6rem 1rem 3.5rem; }
+  .doc-title { font-size: 1.75rem; }
+  .toc { padding: 1rem 1.1rem; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">
+    <a href="/"><img src="data:image/webp;base64,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" alt="Achiles Melo Advocacia"></a>
+  </div>
+  <a href="/" class="nav-back">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+    Voltar ao início
+  </a>
+</nav>
+
+<main class="page-wrap">
+
+  <header class="doc-header">
+    <p class="doc-label">Documento legal</p>
+    <h1 class="doc-title">Política de Privacidade</h1>
+    <div class="doc-meta">
+      <span class="doc-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Última atualização: junho de 2026
+      </span>
+      <span class="doc-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        Achiles Melo Advocacia · OAB/SP 494.216
+      </span>
+    </div>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="Índice do documento">
+    <p class="toc-title">Neste documento</p>
+    <ol class="toc-list">
+      <li><a href="#s1">Quem somos</a></li>
+      <li><a href="#s2">Quais dados coletamos</a></li>
+      <li><a href="#s3">Como usamos seus dados</a></li>
+      <li><a href="#s4">Base legal para o tratamento (LGPD)</a></li>
+      <li><a href="#s5">Compartilhamento de dados</a></li>
+      <li><a href="#s6">Tempo de armazenamento</a></li>
+      <li><a href="#s7">Seus direitos como titular</a></li>
+      <li><a href="#s8">Cookies e rastreamento</a></li>
+      <li><a href="#s9">Segurança dos dados</a></li>
+      <li><a href="#s10">Alterações nesta política</a></li>
+      <li><a href="#s11">Contato e encarregado (DPO)</a></li>
+    </ol>
+  </nav>
+
+  <!-- SEÇÕES -->
+
+  <section class="doc-section" id="s1">
+    <h2 class="doc-h2"><span class="doc-h2-num">1</span>Quem somos</h2>
+    <p class="doc-p">Esta Política de Privacidade se aplica ao site e às atividades de atendimento da <strong>Achiles Melo Advocacia</strong>, escritório de advocacia individual titularizado por <strong>José Achiles Donizetti de Melo Filho</strong>, inscrito na OAB/SP sob o nº 494.216, com sede em Mogi das Cruzes, Estado de São Paulo.</p>
+    <p class="doc-p">Para fins desta política, o escritório é o <strong>Controlador</strong> dos dados pessoais tratados, conforme definido pela Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018 — LGPD).</p>
+  </section>
+
+  <section class="doc-section" id="s2">
+    <h2 class="doc-h2"><span class="doc-h2-num">2</span>Quais dados coletamos</h2>
+    <p class="doc-p">Coletamos apenas os dados necessários para prestar o serviço de atendimento jurídico. As informações podem ser fornecidas diretamente por você por meio dos canais de contato do escritório:</p>
+    <ul class="doc-list">
+      <li><strong>Dados de identificação:</strong> nome completo, CPF, RG, data de nascimento</li>
+      <li><strong>Dados de contato:</strong> número de telefone, endereço de e-mail, endereço postal</li>
+      <li><strong>Dados do caso:</strong> documentos, notificações, autos de infração, prints, contratos e demais informações compartilhadas para análise jurídica</li>
+      <li><strong>Dados de comunicação:</strong> histórico de mensagens trocadas via WhatsApp ou e-mail para fins de atendimento</li>
+      <li><strong>Dados de navegação:</strong> endereço IP, tipo de navegador, páginas visitadas e tempo de permanência, coletados automaticamente ao acessar o site</li>
+    </ul>
+    <div class="highlight-box">
+      <p><strong>Princípio da minimização:</strong> coletamos apenas os dados estritamente necessários para a finalidade declarada. Não solicitamos informações além do que é indispensável para a prestação do serviço.</p>
+    </div>
+  </section>
+
+  <section class="doc-section" id="s3">
+    <h2 class="doc-h2"><span class="doc-h2-num">3</span>Como usamos seus dados</h2>
+    <p class="doc-p">Seus dados pessoais são utilizados exclusivamente para as seguintes finalidades:</p>
+    <ul class="doc-list">
+      <li>Prestar serviços de advocacia e consultoria jurídica</li>
+      <li>Analisar o caso apresentado e elaborar estratégia de defesa</li>
+      <li>Comunicar andamentos processuais, prazos e resultados</li>
+      <li>Cumprir obrigações legais, regulatórias e deontológicas da advocacia</li>
+      <li>Responder a consultas e solicitações de informação</li>
+      <li>Melhorar a experiência de navegação no site</li>
+    </ul>
+    <p class="doc-p">Seus dados <strong>não serão utilizados</strong> para fins de marketing sem consentimento expresso, nem para criação de perfis comportamentais ou venda a terceiros.</p>
+  </section>
+
+  <section class="doc-section" id="s4">
+    <h2 class="doc-h2"><span class="doc-h2-num">4</span>Base legal para o tratamento (LGPD)</h2>
+    <p class="doc-p">O tratamento de dados pessoais realizado por este escritório fundamenta-se nas seguintes bases legais previstas no artigo 7º da LGPD:</p>
+    <ul class="doc-list">
+      <li><strong>Execução de contrato (art. 7º, V):</strong> quando o tratamento é necessário para a prestação dos serviços jurídicos contratados</li>
+      <li><strong>Cumprimento de obrigação legal (art. 7º, II):</strong> quando exigido por normas do Estatuto da OAB, Código de Ética e Disciplina ou legislação aplicável</li>
+      <li><strong>Consentimento (art. 7º, I):</strong> para comunicações informativas ou de marketing, mediante autorização expressa do titular</li>
+      <li><strong>Legítimo interesse (art. 7º, IX):</strong> para fins de segurança, prevenção de fraudes e melhoria dos serviços, desde que não prevaleçam sobre os direitos do titular</li>
+    </ul>
+    <p class="doc-p">Dados sensíveis, quando tratados, seguirão as hipóteses específicas do artigo 11 da LGPD.</p>
+  </section>
+
+  <section class="doc-section" id="s5">
+    <h2 class="doc-h2"><span class="doc-h2-num">5</span>Compartilhamento de dados</h2>
+    <p class="doc-p">Este escritório <strong>não vende, aluga ou comercializa</strong> dados pessoais de clientes ou visitantes. O compartilhamento ocorre apenas nas seguintes situações:</p>
+    <ul class="doc-list">
+      <li><strong>Órgãos públicos e tribunais:</strong> quando necessário para o exercício da atividade jurídica (protocolo de petições, defesas administrativas, ações judiciais)</li>
+      <li><strong>Obrigação legal:</strong> quando determinado por autoridade competente, ordem judicial ou norma aplicável</li>
+      <li><strong>Prestadores de serviço:</strong> ferramentas de comunicação (WhatsApp Business, e-mail), armazenamento em nuvem e sistemas de gestão do escritório, sempre mediante acordo de confidencialidade e nos limites do necessário</li>
+    </ul>
+    <div class="highlight-box">
+      <p>O sigilo profissional do advogado, previsto no artigo 7º, II, do Estatuto da OAB e no Código de Ética e Disciplina, protege todas as informações que você nos confia no contexto da relação cliente-advogado.</p>
+    </div>
+  </section>
+
+  <section class="doc-section" id="s6">
+    <h2 class="doc-h2"><span class="doc-h2-num">6</span>Tempo de armazenamento</h2>
+    <p class="doc-p">Seus dados serão armazenados pelo período necessário ao cumprimento das finalidades descritas nesta política e das obrigações legais aplicáveis:</p>
+    <ul class="doc-list">
+      <li><strong>Dados de clientes ativos:</strong> durante toda a vigência do contrato de prestação de serviços</li>
+      <li><strong>Dados de clientes encerrados:</strong> pelo prazo prescricional aplicável à relação jurídica, ou pelo mínimo de 5 (cinco) anos após o encerramento</li>
+      <li><strong>Dados de contato (consultas não contratadas):</strong> até 90 dias após o último contato, salvo consentimento para comunicações futuras</li>
+      <li><strong>Dados de navegação:</strong> pelo período estabelecido pela plataforma de análise utilizada, geralmente até 26 meses</li>
+    </ul>
+    <p class="doc-p">Após o prazo aplicável, os dados são eliminados ou anonimizados de forma segura.</p>
+  </section>
+
+  <section class="doc-section" id="s7">
+    <h2 class="doc-h2"><span class="doc-h2-num">7</span>Seus direitos como titular</h2>
+    <p class="doc-p">Nos termos do artigo 18 da LGPD, você tem os seguintes direitos em relação aos seus dados pessoais:</p>
+    <ul class="doc-list">
+      <li><strong>Confirmação e acesso:</strong> saber se tratamos seus dados e obter cópia das informações</li>
+      <li><strong>Correção:</strong> solicitar a atualização de dados incompletos, inexatos ou desatualizados</li>
+      <li><strong>Anonimização, bloqueio ou eliminação:</strong> dos dados desnecessários, excessivos ou tratados em desconformidade com a LGPD</li>
+      <li><strong>Portabilidade:</strong> receber seus dados em formato estruturado, quando tecnicamente viável</li>
+      <li><strong>Eliminação:</strong> dos dados tratados com base no consentimento, ressalvadas as obrigações legais</li>
+      <li><strong>Revogação do consentimento:</strong> a qualquer momento, para os tratamentos baseados nessa base legal</li>
+      <li><strong>Oposição:</strong> ao tratamento realizado com fundamento em outras bases legais, em caso de descumprimento da LGPD</li>
+      <li><strong>Informação:</strong> sobre entidades públicas e privadas com as quais compartilhamos dados</li>
+    </ul>
+    <p class="doc-p">Para exercer qualquer desses direitos, entre em contato pelos canais indicados na seção 11 desta política.</p>
+  </section>
+
+  <section class="doc-section" id="s8">
+    <h2 class="doc-h2"><span class="doc-h2-num">8</span>Cookies e rastreamento</h2>
+    <p class="doc-p">Nosso site pode utilizar cookies e tecnologias similares para melhorar a experiência de navegação. Os tipos utilizados são:</p>
+    <ul class="doc-list">
+      <li><strong>Cookies essenciais:</strong> necessários para o funcionamento básico do site. Não podem ser desativados.</li>
+      <li><strong>Cookies de desempenho:</strong> coletam informações sobre como os visitantes utilizam o site (páginas visitadas, tempo de permanência). Utilizamos esses dados de forma agregada e anônima.</li>
+      <li><strong>Cookies de publicidade:</strong> quando utilizados serviços como Google Ads, pode haver rastreamento para fins de mensuração de campanhas. Você pode optar por não ser rastreado nas configurações do seu navegador.</li>
+    </ul>
+    <p class="doc-p">Você pode gerenciar ou desativar cookies nas configurações do seu navegador. A desativação de cookies essenciais pode afetar a funcionalidade do site.</p>
+  </section>
+
+  <section class="doc-section" id="s9">
+    <h2 class="doc-h2"><span class="doc-h2-num">9</span>Segurança dos dados</h2>
+    <p class="doc-p">Adotamos medidas técnicas e organizacionais adequadas para proteger seus dados contra acesso não autorizado, perda, destruição ou divulgação indevida, incluindo:</p>
+    <ul class="doc-list">
+      <li>Transmissão de dados via protocolo HTTPS com certificado SSL</li>
+      <li>Acesso restrito aos dados apenas às pessoas diretamente envolvidas no atendimento</li>
+      <li>Uso de ferramentas de comunicação com criptografia de ponta a ponta</li>
+      <li>Armazenamento em serviços com padrões reconhecidos de segurança</li>
+    </ul>
+    <div class="highlight-box">
+      <p>Em caso de incidente de segurança que possa acarretar risco ou dano relevante aos titulares, notificaremos a Autoridade Nacional de Proteção de Dados (ANPD) e os titulares afetados nos prazos estabelecidos pela LGPD.</p>
+    </div>
+  </section>
+
+  <section class="doc-section" id="s10">
+    <h2 class="doc-h2"><span class="doc-h2-num">10</span>Alterações nesta política</h2>
+    <p class="doc-p">Esta Política de Privacidade pode ser atualizada periodicamente para refletir mudanças nas práticas de tratamento de dados, na legislação aplicável ou nos serviços prestados. A data da última atualização é indicada no cabeçalho deste documento.</p>
+    <p class="doc-p">Recomendamos a revisão periódica desta página. Em caso de alterações relevantes que afetem diretamente clientes ativos, enviaremos comunicação prévia pelos canais de contato disponíveis.</p>
+  </section>
+
+  <section class="doc-section" id="s11">
+    <h2 class="doc-h2"><span class="doc-h2-num">11</span>Contato e encarregado (DPO)</h2>
+    <p class="doc-p">Para exercer seus direitos como titular, tirar dúvidas sobre esta política ou reportar qualquer questão relacionada ao tratamento de dados pessoais, entre em contato:</p>
+    <div class="contact-box">
+      <p><strong>Achiles Melo Advocacia</strong></p>
+      <p>Responsável pelo tratamento de dados: José Achiles Donizetti de Melo Filho — OAB/SP 494.216</p>
+      <p>WhatsApp: <a href="https://wa.me/5511913473579" target="_blank" rel="noopener">(11) 91347-3579</a></p>
+      <p>Localização: Mogi das Cruzes, São Paulo — SP</p>
+      <p style="margin-top:.75rem;font-size:13px;color:var(--gray-3)">Prazo de resposta: até 15 dias úteis a contar do recebimento da solicitação, conforme art. 18, §3º da LGPD.</p>
+    </div>
+    <p class="doc-p" style="margin-top:1rem">Para questões relacionadas à proteção de dados pessoais no Brasil, você também pode contatar a <strong>Autoridade Nacional de Proteção de Dados (ANPD)</strong> pelo site <a href="https://www.gov.br/anpd" target="_blank" rel="noopener">gov.br/anpd</a>.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Achiles Melo Advocacia · OAB/SP 494.216 · Mogi das Cruzes, SP</p>
+  <div class="footer-links">
+    <a href="/">Início</a>
+    <a href="/privacidade">Política de Privacidade</a>
+    <a href="/aviso-legal">Aviso Legal</a>
+  </div>
+</footer>
+
+</body>
+</html>
