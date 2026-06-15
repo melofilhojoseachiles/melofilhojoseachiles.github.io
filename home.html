@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Achiles Melo Advocacia | Direito Digital e Trânsito</title>
+<meta name="description" content="Advogado especializado em Direito Digital e Trânsito em Mogi das Cruzes/SP. Golpe PIX, WhatsApp banido, recurso de multa, defesa de CNH. Atendimento online.">
+<link rel="canonical" href="https://achilesmelo.adv.br/">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://achilesmelo.adv.br/">
+<meta property="og:title" content="Achiles Melo Advocacia | Direito Digital e Trânsito">
+<meta property="og:description" content="Advogado especializado em Golpe PIX, WhatsApp banido, recurso de multa e defesa de CNH. Mogi das Cruzes/SP e todo o Brasil.">
+<meta property="og:locale" content="pt_BR">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Achiles Melo Advocacia | Direito Digital e Trânsito">
+<meta name="twitter:description" content="Advogado especializado em Golpe PIX, WhatsApp banido, recurso de multa e defesa de CNH. Mogi das Cruzes/SP e todo o Brasil.">
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "Achiles Melo Advocacia",
+  "description": "Escritório de advocacia especializado em Direito Digital e Direito de Trânsito.",
+  "url": "https://achilesmelo.adv.br",
+  "telephone": "+55-11-91347-3579",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Mogi das Cruzes",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "areaServed": "BR",
+  "serviceType": ["Direito Digital", "Direito de Trânsito", "Recurso de Multa", "Defesa CNH", "Golpe PIX", "WhatsApp Banido"],
+  "employee": {
+    "@type": "Person",
+    "name": "José Achiles Donizetti de Melo Filho",
+    "jobTitle": "Advogado",
+    "identifier": "OAB/SP 494.216"
+  },
+  "sameAs": ["https://www.instagram.com/achilesmelo.adv"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --black:       #0D0D0D;
+  --black-2:     #161616;
+  --black-3:     #1F1F1F;
+  --gold:        #C9A84C;
+  --gold-light:  #E2C67A;
+  --gold-dim:    rgba(201,168,76,0.12);
+  --gold-border: rgba(201,168,76,0.28);
+  --white:       #FFFFFF;
+  --gray-2:      #A0A0A0;
+  --gray-3:      #555555;
+  --font:        'Inter', sans-serif;
+}
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font); background: var(--black); color: var(--white);
+  line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden;
+}
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+
+/* ══ NAV ══ */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.875rem 2rem;
+  background: rgba(13,13,13,0.92); backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+.nav-logo img { height: 38px; width: auto; }
+.nav-links { display: flex; align-items: center; gap: 2rem; }
+.nav-links a { font-size: 13.5px; font-weight: 500; color: var(--gray-2); transition: color .2s; }
+.nav-links a:hover { color: var(--white); }
+.nav-right { display: flex; align-items: center; gap: 12px; }
+.nav-cta {
+  background: var(--gold); color: var(--black);
+  padding: 0.5rem 1.25rem; border-radius: 6px;
+  font-size: 13px; font-weight: 700; white-space: nowrap;
+  transition: background .2s;
+}
+.nav-cta:hover { background: var(--gold-light); }
+.nav-menu-btn {
+  display: none; flex-direction: column; gap: 5px; cursor: pointer;
+  background: none; border: none; padding: 4px;
+}
+.nav-menu-btn span {
+  display: block; width: 22px; height: 2px;
+  background: var(--white); border-radius: 2px; transition: all .3s;
+}
+.mobile-menu {
+  display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: var(--black-2); z-index: 99; flex-direction: column;
+  align-items: center; justify-content: center; gap: 2rem;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  font-size: 1.4rem; font-weight: 700; color: var(--white);
+  transition: color .2s;
+}
+.mobile-menu a:hover { color: var(--gold); }
+.mobile-menu .close-btn {
+  position: absolute; top: 1.5rem; right: 1.5rem;
+  font-size: 1.5rem; color: var(--gray-2); cursor: pointer;
+  background: none; border: none; color: var(--white);
+}
+
+/* ══ HERO ══ */
+.hero {
+  min-height: 100svh;
+  display: grid; grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+.hero-left {
+  padding: 8rem 3rem 5rem 3rem;
+  max-width: 640px;
+  margin-left: auto;
+}
+.hero-right {
+  position: relative; height: 100svh; overflow: hidden;
+}
+.hero-right-img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center top;
+  filter: brightness(0.65) saturate(0.5);
+}
+.hero-right-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(90deg, var(--black) 0%, transparent 35%),
+              linear-gradient(0deg, rgba(13,13,13,0.6) 0%, transparent 40%);
+}
+.hero-right-strip {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  height: 3px; background: var(--gold);
+}
+
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--gold);
+  border: 1px solid var(--gold-border); background: var(--gold-dim);
+  padding: 5px 14px; border-radius: 100px; margin-bottom: 2rem;
+}
+.hero-eyebrow-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--gold); }
+.hero-h1 {
+  font-size: clamp(2.6rem, 4vw, 3.8rem);
+  font-weight: 900; line-height: 1.05; letter-spacing: -0.03em;
+  color: var(--white); margin-bottom: 1.5rem;
+}
+.hero-h1 em { font-style: normal; color: var(--gold); }
+.hero-desc {
+  font-size: 1.1rem; color: var(--gray-2); line-height: 1.8;
+  max-width: 480px; margin-bottom: 2.5rem;
+}
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 3.5rem; }
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--gold); color: var(--black);
+  padding: 1rem 1.75rem; border-radius: 8px;
+  font-size: 1rem; font-weight: 800;
+  transition: background .2s, transform .15s;
+}
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+.btn-outline {
+  display: inline-flex; align-items: center; gap: 8px;
+  border: 1.5px solid rgba(255,255,255,0.2); color: var(--white);
+  padding: 1rem 1.5rem; border-radius: 8px;
+  font-size: 1rem; font-weight: 600;
+  transition: border-color .2s, background .2s;
+}
+.btn-outline:hover { border-color: var(--gold); background: var(--gold-dim); }
+.hero-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.hero-tag {
+  font-size: 12px; font-weight: 600; color: var(--gray-2);
+  background: var(--black-3); border: 1px solid rgba(255,255,255,0.08);
+  padding: 5px 12px; border-radius: 100px;
+}
+.hero-tag::before { content: "→ "; color: var(--gold); }
+
+/* ══ DIVIDER ══ */
+.gold-rule {
+  height: 1px; border: none;
+  background: linear-gradient(90deg, transparent, var(--gold-border), transparent);
+}
+
+/* ══ STATS STRIP ══ */
+.stats-strip {
+  background: var(--black-2);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  padding: 2.5rem 2rem;
+}
+.stats-strip-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px; overflow: hidden;
+}
+.stat-box {
+  background: var(--black-2); padding: 2rem 1.75rem;
+  text-align: center; transition: background .2s;
+}
+.stat-box:hover { background: var(--black-3); }
+.stat-box-num {
+  font-size: 2.8rem; font-weight: 900; color: var(--white);
+  line-height: 1; letter-spacing: -0.04em; margin-bottom: 6px;
+}
+.stat-box-num span { color: var(--gold); }
+.stat-box-label { font-size: 13px; color: var(--gray-2); line-height: 1.4; }
+
+/* ══ SECTIONS ══ */
+section.padded { padding: 5.5rem 2rem; }
+.section-inner { max-width: 1100px; margin: 0 auto; }
+.section-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 0.6rem;
+}
+.section-title {
+  font-size: clamp(1.85rem, 3.5vw, 2.75rem);
+  font-weight: 800; line-height: 1.12; letter-spacing: -0.025em;
+  color: var(--white); margin-bottom: 1rem;
+}
+.section-sub {
+  font-size: 1.05rem; color: var(--gray-2); line-height: 1.8;
+  max-width: 560px; margin-bottom: 3rem;
+}
+
+/* ══ AREAS ══ */
+.areas-section { background: var(--black-2); }
+.areas-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+}
+.area-card {
+  background: var(--black-3);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 14px; padding: 2rem;
+  display: flex; flex-direction: column; gap: 1rem;
+  transition: border-color .25s, transform .2s, background .2s;
+  position: relative; overflow: hidden;
+}
+.area-card::before {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+  height: 2px; background: var(--gold);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform .3s;
+}
+.area-card:hover { border-color: var(--gold-border); transform: translateY(-3px); background: #232323; }
+.area-card:hover::before { transform: scaleX(1); }
+.area-icon {
+  width: 48px; height: 48px; border-radius: 10px;
+  background: var(--gold-dim); border: 1px solid var(--gold-border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem;
+}
+.area-title { font-size: 1.15rem; font-weight: 700; color: var(--white); }
+.area-body { font-size: 14px; color: var(--gray-2); line-height: 1.7; flex: 1; }
+.area-services { display: flex; flex-direction: column; gap: 5px; }
+.area-service {
+  font-size: 12.5px; color: var(--gray-2);
+  display: flex; align-items: center; gap: 7px;
+}
+.area-service::before {
+  content: ''; width: 4px; height: 4px; border-radius: 50%;
+  background: var(--gold); flex-shrink: 0;
+}
+.area-cta {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 13px; font-weight: 700; color: var(--gold);
+  margin-top: auto; padding-top: 0.5rem;
+  transition: gap .2s;
+}
+.area-card:hover .area-cta { gap: 10px; }
+
+/* ══ ABOUT ══ */
+.about-grid {
+  display: grid; grid-template-columns: 360px 1fr;
+  gap: 5rem; align-items: start;
+}
+.about-photo-wrap {
+  border-radius: 14px; overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.07);
+  position: relative;
+  max-width: 360px;
+}
+.about-photo-wrap img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: center 10%;
+  display: block;
+}
+.about-photo-caption {
+  padding: 1.1rem 1.25rem 1.35rem;
+  border-top: 3px solid var(--gold);
+  background: var(--black-3);
+}
+.about-photo-name { font-size: 1rem; font-weight: 700; color: var(--white); }
+.about-photo-role { font-size: 12.5px; color: var(--gray-2); margin-top: 3px; }
+.about-oab {
+  display: inline-block; margin-top: 8px;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--gold);
+  background: var(--gold-dim); border: 1px solid var(--gold-border);
+  padding: 3px 9px; border-radius: 4px;
+}
+.about-text { padding-top: 0.5rem; }
+.about-text p {
+  font-size: 15px; color: var(--gray-2); line-height: 1.85;
+  margin-bottom: 1.1rem;
+}
+.about-text p:last-child { margin-bottom: 0; }
+.about-text strong { color: var(--white); font-weight: 600; }
+.about-values {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+  margin-top: 2rem;
+}
+.about-value {
+  background: var(--black-2); border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 10px; padding: 1.1rem 1.25rem;
+}
+.about-value-title {
+  font-size: 13px; font-weight: 700; color: var(--white);
+  margin-bottom: 4px; display: flex; align-items: center; gap: 7px;
+}
+.about-value-title::before {
+  content: ''; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--gold); flex-shrink: 0;
+}
+.about-value-text { font-size: 12.5px; color: var(--gray-2); line-height: 1.6; }
+
+/* ══ HOW IT WORKS ══ */
+.how-section { background: var(--black-2); }
+.how-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 14px; overflow: hidden;
+}
+.how-step {
+  background: var(--black-2); padding: 2rem 1.5rem;
+  position: relative; transition: background .2s;
+}
+.how-step:hover { background: var(--black-3); }
+.how-num {
+  font-size: 3.5rem; font-weight: 900; line-height: 1;
+  color: rgba(201,168,76,0.12); letter-spacing: -0.04em;
+  margin-bottom: 1rem; transition: color .3s;
+}
+.how-step:hover .how-num { color: rgba(201,168,76,0.3); }
+.how-step-title {
+  font-size: 15px; font-weight: 700; color: var(--white);
+  margin-bottom: 8px; line-height: 1.3;
+}
+.how-step-text { font-size: 13px; color: var(--gray-2); line-height: 1.7; }
+
+/* ══ CTA BANNER ══ */
+.cta-banner {
+  background: var(--black-2);
+  border: 1px solid var(--gold-border);
+  border-radius: 16px;
+  padding: 3.5rem; margin: 0 2rem;
+  display: grid; grid-template-columns: 1fr auto;
+  gap: 3rem; align-items: center;
+}
+.cta-banner-title {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 900; line-height: 1.1; letter-spacing: -0.025em;
+  color: var(--white); margin-bottom: 0.75rem;
+}
+.cta-banner-title em { font-style: normal; color: var(--gold); }
+.cta-banner-sub { font-size: 15px; color: var(--gray-2); line-height: 1.6; }
+.cta-banner-actions { display: flex; flex-direction: column; gap: 10px; align-items: flex-end; }
+.cta-note { font-size: 12px; color: var(--gray-3); text-align: center; }
+
+/* ══ FOOTER ══ */
+footer {
+  background: var(--black);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 3rem 2rem 2rem;
+}
+.footer-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 3rem; margin-bottom: 2.5rem;
+}
+.footer-brand img { height: 36px; margin-bottom: 1rem; }
+.footer-brand p {
+  font-size: 13px; color: var(--gray-3); line-height: 1.7; max-width: 240px;
+}
+.footer-col-title {
+  font-size: 12px; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--white); margin-bottom: 1rem;
+}
+.footer-col a {
+  display: block; font-size: 13px; color: var(--gray-3);
+  margin-bottom: 0.6rem; transition: color .2s;
+}
+.footer-col a:hover { color: var(--gold); }
+.footer-bottom {
+  max-width: 1100px; margin: 0 auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 0.75rem;
+}
+.footer-bottom p { font-size: 12px; color: var(--gray-3); }
+.footer-bottom a { font-size: 12px; color: var(--gray-3); transition: color .2s; }
+.footer-bottom a:hover { color: var(--gold); }
+.footer-bottom-links { display: flex; gap: 1.5rem; }
+
+/* ══ STICKY MOBILE CTA ══ */
+.sticky-cta {
+  display: none;
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 99;
+  background: rgba(22,22,22,0.97);
+  border-top: 1px solid var(--gold-border);
+  padding: 0.75rem 1rem; gap: 8px;
+}
+.sticky-cta a {
+  flex: 1; display: flex; align-items: center; justify-content: center; gap: 7px;
+  padding: 0.8rem; border-radius: 8px; font-size: 14px; font-weight: 700;
+}
+.s-wpp { background: #25D366; color: #fff; }
+.s-tel { background: var(--gold); color: var(--black); }
+
+/* ══ FADE ══ */
+.fade-up { opacity: 0; transform: translateY(22px); transition: opacity .55s ease, transform .55s ease; }
+.fade-up.visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .fade-up { opacity: 1; transform: none; transition: none; } }
+
+/* ══ RESPONSIVE ══ */
+@media (max-width: 1100px) {
+  .footer-inner { grid-template-columns: 1fr 1fr; gap: 2rem; }
+}
+@media (max-width: 960px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-right { display: none; }
+  .hero-left { max-width: 100%; padding: 7rem 1.5rem 4rem; margin: 0; }
+  .areas-grid { grid-template-columns: 1fr 1fr; }
+  .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .how-grid { grid-template-columns: 1fr 1fr; }
+  .cta-banner { grid-template-columns: 1fr; gap: 2rem; margin: 0 1rem; }
+  .cta-banner-actions { align-items: flex-start; }
+  .stats-strip-inner { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  nav { padding: 0.75rem 1rem; }
+  .nav-links { display: none; }
+  .nav-menu-btn { display: flex; }
+  .nav-cta { display: none; }
+  .hero-left { padding: 6rem 1rem 4rem; }
+  .hero-h1 { font-size: clamp(2rem, 9vw, 2.8rem); }
+  .hero-desc { font-size: 1rem; }
+  .hero-actions { flex-direction: column; }
+  .btn-primary, .btn-outline { width: 100%; justify-content: center; }
+  section.padded { padding: 3.5rem 1rem; }
+  .stats-strip { padding: 0; }
+  .stats-strip-inner { grid-template-columns: 1fr 1fr; border-radius: 0; border-left: none; border-right: none; }
+  .stat-box { padding: 1.5rem 1rem; }
+  .stat-box-num { font-size: 2.2rem; }
+  .areas-grid { grid-template-columns: 1fr; }
+  .how-grid { grid-template-columns: 1fr; }
+  .about-photo-wrap img { aspect-ratio: 4/3; object-position: center 10%; }
+  .about-values { grid-template-columns: 1fr; }
+  .cta-banner { padding: 2rem 1.25rem; margin: 0; border-radius: 0; border-left: none; border-right: none; }
+  footer { padding: 2.5rem 1rem 1.5rem; padding-bottom: 5.5rem; }
+  .footer-inner { grid-template-columns: 1fr; gap: 1.75rem; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+  .sticky-cta { display: flex; }
+}
+@media (max-width: 360px) {
+  .hero-h1 { font-size: 1.9rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <div class="nav-logo">
+    <a href="index.html"><img src="https://melofilhojoseachiles.github.io/imagens/LogoHorizontal_AchilesMelo_RGB_DOURADO.png" alt="Achiles Melo Advocacia"></a>
+  </div>
+  <div class="nav-links">
+    <a href="#areas">Áreas de Atuação</a>
+    <a href="#sobre">O Escritório</a>
+    <a href="#como-funciona">Como Funciona</a>
+    <a href="#contato">Contato</a>
+  </div>
+  <div class="nav-right">
+    <a href="https://wa.me/5511913473579?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20uma%20consulta" class="nav-cta" target="_blank" rel="noopener">Falar agora</a>
+    <button class="nav-menu-btn" aria-label="Menu" id="menuBtn">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-btn" id="closeMenu" aria-label="Fechar menu">✕</button>
+  <a href="#areas" class="menu-link">Áreas de Atuação</a>
+  <a href="#sobre" class="menu-link">O Escritório</a>
+  <a href="#como-funciona" class="menu-link">Como Funciona</a>
+  <a href="#contato" class="menu-link">Contato</a>
+  <a href="https://wa.me/5511913473579" target="_blank" rel="noopener" style="color:var(--gold)">WhatsApp</a>
+</div>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">
+      <span class="hero-eyebrow-dot" aria-hidden="true"></span>
+      Mogi das Cruzes/SP · Atendimento em todo o Brasil
+    </div>
+    <h1 class="hero-h1">
+      Direito <em>Digital</em><br>e de <em>Trânsito</em><br>que resolve.
+    </h1>
+    <p class="hero-desc">
+      Advocacia especializada em golpe PIX, WhatsApp banido, contas hackeadas, recursos de multa e defesa da CNH. Atendimento estratégico, ágil e 100% online.
+    </p>
+    <div class="hero-actions">
+      <a href="https://wa.me/5511913473579?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20uma%20consulta" target="_blank" rel="noopener" class="btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Consulta pelo WhatsApp
+      </a>
+      <a href="tel:+5511913473579" class="btn-outline">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+        (11) 91347-3579
+      </a>
+    </div>
+    <div class="hero-tags">
+      <span class="hero-tag">Golpe PIX</span>
+      <span class="hero-tag">WhatsApp Banido</span>
+      <span class="hero-tag">Conta Hackeada</span>
+      <span class="hero-tag">Recurso de Multa</span>
+      <span class="hero-tag">Defesa da CNH</span>
+    </div>
+  </div>
+  <div class="hero-right" aria-hidden="true">
+    <img src="https://melofilhojoseachiles.github.io/imagens/advogado.png" alt="" class="hero-right-img">
+    <div class="hero-right-overlay"></div>
+    <div class="hero-right-strip"></div>
+  </div>
+</section>
+
+<!-- ══ STATS STRIP ══ -->
+<div class="stats-strip">
+  <div class="stats-strip-inner">
+    <div class="stat-box">
+      <div class="stat-box-num">3<span> áreas</span></div>
+      <div class="stat-box-label">de especialização<br>jurídica</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-box-num">100<span>%</span></div>
+      <div class="stat-box-label">online — atende<br>todo o Brasil</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-box-num">30<span>dias</span></div>
+      <div class="stat-box-label">prazo médio para<br>1.ª defesa em multas</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-box-num">24<span>h</span></div>
+      <div class="stat-box-label">retorno em casos<br>urgentes digitais</div>
+    </div>
+  </div>
+</div>
+
+<hr class="gold-rule">
+
+<!-- ══ ÁREAS ══ -->
+<section class="areas-section padded fade-up" id="areas">
+  <div class="section-inner">
+    <p class="section-label">Especialidades</p>
+    <h2 class="section-title">Áreas de atuação</h2>
+    <p class="section-sub">Cada área tem estratégias e prazos específicos. A especialização faz diferença direta no resultado.</p>
+    <div class="areas-grid">
+
+      <!-- Trânsito -->
+      <div class="area-card">
+        <div class="area-icon" aria-hidden="true">🚗</div>
+        <h3 class="area-title">Direito de Trânsito</h3>
+        <p class="area-body">Defesa de motoristas em autuações indevidas, suspensão e cassação de CNH, recursos administrativos em todas as instâncias.</p>
+        <div class="area-services">
+          <span class="area-service">Recurso de multa indevida</span>
+          <span class="area-service">Defesa em suspensão de CNH</span>
+          <span class="area-service">Indicação de condutor</span>
+          <span class="area-service">Nulidade por falha no radar</span>
+          <span class="area-service">Retenção irregular de veículo</span>
+        </div>
+        <a href="transito/index.html" class="area-cta">
+          Ver página da área
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <!-- Digital -->
+      <div class="area-card">
+        <div class="area-icon" aria-hidden="true">💻</div>
+        <h3 class="area-title">Direito Digital</h3>
+        <p class="area-body">Proteção jurídica em crimes e conflitos no ambiente digital, incluindo responsabilização de plataformas e bancos em casos de fraude.</p>
+        <div class="area-services">
+          <span class="area-service">Golpe do PIX</span>
+          <span class="area-service">WhatsApp banido ou bloqueado</span>
+          <span class="area-service">Conta hackeada</span>
+          <span class="area-service">Fraude em redes sociais</span>
+          <span class="area-service">Responsabilidade de plataformas</span>
+        </div>
+        <a href="https://wa.me/5511913473579?text=Olá,%20preciso%20de%20ajuda%20com%20um%20caso%20de%20Direito%20Digital" target="_blank" rel="noopener" class="area-cta">
+          Consultar agora
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <!-- PIX/Fraude destaque -->
+      <div class="area-card">
+        <div class="area-icon" aria-hidden="true">🔒</div>
+        <h3 class="area-title">Fraudes Financeiras</h3>
+        <p class="area-body">Recuperação de valores transferidos em golpes, responsabilização bancária por falha no sistema antifraude e medidas cautelares urgentes.</p>
+        <div class="area-services">
+          <span class="area-service">Bloqueio judicial de valores</span>
+          <span class="area-service">Responsabilidade do banco</span>
+          <span class="area-service">Danos morais por fraude</span>
+          <span class="area-service">Recuperação via Juizado Especial</span>
+          <span class="area-service">Atendimento urgente</span>
+        </div>
+        <a href="https://wa.me/5511913473579?text=Olá,%20caí%20num%20golpe%20e%20preciso%20de%20ajuda%20urgente" target="_blank" rel="noopener" class="area-cta">
+          Caso urgente — fale agora
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="gold-rule">
+
+<!-- ══ ABOUT ══ -->
+<section class="padded fade-up" id="sobre">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-photo-wrap">
+        <img src="https://melofilhojoseachiles.github.io/imagens/advogado.png" alt="Dr. José Achiles Donizetti de Melo Filho — Advogado OAB/SP 494.216">
+        <div class="about-photo-caption">
+          <p class="about-photo-name">Dr. José Achiles Melo</p>
+          <p class="about-photo-role">Advogado · OAB/SP 494.216</p>
+          <span class="about-oab">Direito Digital e Trânsito</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-label">O escritório</p>
+        <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:1.25rem">Advocacia especializada.<br>Atendimento direto com o advogado.</h2>
+        <p>Sou <strong>José Achiles Donizetti de Melo Filho</strong>, advogado inscrito na OAB/SP sob o nº 494.216, com atuação exclusiva em <strong>Direito Digital e Direito de Trânsito</strong>. Essas duas áreas têm em comum a velocidade: casos que exigem resposta rápida, prazos curtos e conhecimento técnico específico.</p>
+        <p>Atuo em Mogi das Cruzes/SP e atendo de forma remota para todo o Brasil. Cada cliente fala diretamente comigo — sem assistentes, sem intermediários, sem protocolos genéricos. O seu caso recebe atenção individual desde o primeiro contato.</p>
+        <p>No <strong>Direito Digital</strong>, acompanho a evolução constante das leis, jurisprudências e políticas das plataformas — o que muda frequentemente e exige atualização permanente. No <strong>Direito de Trânsito</strong>, conheço os detalhes dos processos administrativos que fazem diferença entre um recurso negado e uma multa cancelada.</p>
+        <div class="about-values">
+          <div class="about-value">
+            <p class="about-value-title">Atendimento direto</p>
+            <p class="about-value-text">Você fala comigo, não com estagiários ou atendentes. Cada caso é analisado pessoalmente.</p>
+          </div>
+          <div class="about-value">
+            <p class="about-value-title">Agilidade estratégica</p>
+            <p class="about-value-text">Prazos no trânsito e no digital são curtos. Respondemos rápido porque sabemos que o tempo importa.</p>
+          </div>
+          <div class="about-value">
+            <p class="about-value-title">Especialização real</p>
+            <p class="about-value-text">Não somos generalistas. Duas áreas, profundidade real — o que se traduz em melhores resultados.</p>
+          </div>
+          <div class="about-value">
+            <p class="about-value-title">100% remoto</p>
+            <p class="about-value-text">Todo o processo por WhatsApp, e-mail e videochamada. Sem deslocamento, sem burocracia presencial.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="gold-rule">
+
+<!-- ══ COMO FUNCIONA ══ -->
+<section class="how-section padded fade-up" id="como-funciona">
+  <div class="section-inner">
+    <p class="section-label">Processo</p>
+    <h2 class="section-title">Como funciona o atendimento</h2>
+    <p class="section-sub">Do primeiro contato até o resultado, você acompanha tudo em tempo real.</p>
+    <div class="how-grid">
+      <div class="how-step">
+        <div class="how-num" aria-hidden="true">01</div>
+        <h3 class="how-step-title">Primeiro contato pelo WhatsApp</h3>
+        <p class="how-step-text">Me conte o que aconteceu. Envie documentos, prints ou a notificação. Respondo no mesmo dia.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-num" aria-hidden="true">02</div>
+        <h3 class="how-step-title">Análise do caso</h3>
+        <p class="how-step-text">Avalio os fundamentos, prazos e possibilidades jurídicas. Você recebe um diagnóstico claro e honesto.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-num" aria-hidden="true">03</div>
+        <h3 class="how-step-title">Elaboração da estratégia</h3>
+        <p class="how-step-text">Defesa prévia, recurso administrativo ou ação judicial — defino o caminho mais eficiente para o seu caso.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-num" aria-hidden="true">04</div>
+        <h3 class="how-step-title">Acompanhamento e resultado</h3>
+        <p class="how-step-text">Protocolo, acompanho o andamento e comunico cada atualização. Você nunca fica no escuro sobre o seu caso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="gold-rule">
+
+<!-- ══ CTA ══ -->
+<section class="padded fade-up" id="contato">
+  <div class="cta-banner">
+    <div>
+      <p class="section-label">Próximo passo</p>
+      <h2 class="cta-banner-title">Tem um caso para resolver?<br><em>Fale agora.</em></h2>
+      <p class="cta-banner-sub">Atendimento em Mogi das Cruzes/SP e online para todo o Brasil.<br>Resposta no mesmo dia para casos urgentes.</p>
+    </div>
+    <div class="cta-banner-actions">
+      <a href="https://wa.me/5511913473579?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20uma%20consulta" target="_blank" rel="noopener" class="btn-primary" style="font-size:1rem;padding:1rem 1.75rem">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Falar pelo WhatsApp
+      </a>
+      <a href="tel:+5511913473579" class="btn-outline" style="font-size:0.95rem;padding:0.875rem 1.5rem">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+        (11) 91347-3579
+      </a>
+      <p class="cta-note">OAB/SP 494.216 · Mogi das Cruzes, SP</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="https://melofilhojoseachiles.github.io/imagens/LogoHorizontal_AchilesMelo_RGB_DOURADO.png" alt="Achiles Melo Advocacia">
+      <p>Advocacia especializada em Direito Digital e Trânsito. Atendimento estratégico e ágil em Mogi das Cruzes/SP e online para todo o Brasil.</p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Áreas</p>
+      <a href="transito/index.html">Direito de Trânsito</a>
+      <a href="https://wa.me/5511913473579?text=Olá,%20preciso%20de%20ajuda%20com%20um%20caso%20de%20Direito%20Digital">Direito Digital</a>
+      <a href="https://wa.me/5511913473579?text=Olá,%20caí%20num%20golpe%20e%20preciso%20de%20ajuda">Fraudes Financeiras</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Contato</p>
+      <a href="https://wa.me/5511913473579" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="tel:+5511913473579">(11) 91347-3579</a>
+      <a href="https://www.instagram.com/achilesmelo.adv" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Legal</p>
+      <a href="privacidade.html">Política de Privacidade</a>
+      <a href="aviso-legal.html">Aviso Legal</a>
+      <a href="aviso-legal.html">Aviso Legal</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Achiles Melo Advocacia. Todos os direitos reservados.</p>
+    <div class="footer-bottom-links">
+      <a href="privacidade.html">Privacidade</a>
+      <a href="aviso-legal.html">Aviso Legal</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ══ STICKY MOBILE CTA ══ -->
+<div class="sticky-cta" aria-label="Contato rápido">
+  <a href="https://wa.me/5511913473579?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20uma%20consulta" target="_blank" rel="noopener" class="s-wpp">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp
+  </a>
+  <a href="tel:+5511913473579" class="s-tel">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+    Ligar
+  </a>
+</div>
+
+<script>
+// Fade-up observer
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.08 });
+document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+
+// Mobile menu
+const menuBtn = document.getElementById('menuBtn');
+const closeMenu = document.getElementById('closeMenu');
+const mobileMenu = document.getElementById('mobileMenu');
+menuBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
+closeMenu.addEventListener('click', () => mobileMenu.classList.remove('open'));
+document.querySelectorAll('.menu-link').forEach(l => l.addEventListener('click', () => mobileMenu.classList.remove('open')));
+</script>
+</body>
+</html>
