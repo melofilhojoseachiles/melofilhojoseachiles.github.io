@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recurso de Multa de Trânsito Especializado | Achiles Melo Advocacia</title>
+<meta name="description" content="Não perca sua CNH. Defesa especializada em recursos de multas graves, bafômetro, radar irregular e suspensão de carteira. Atendimento ágil em Mogi das Cruzes e online para todo o Brasil.">
+<link rel="canonical" href="https://achilesmelo.adv.br/transito/">
+
+<!-- Open Graph / Meta de Redes Sociais -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Defesa Técnica contra Multas e Suspensão de CNH | Achiles Melo">
+<meta property="og:description" content="Evite a pontuação e a perda do seu direito de dirigir. Análise jurídica imediata do seu auto de infração de forma 100% online.">
+<meta property="og:url" content="https://achilesmelo.adv.br/transito/">
+
+<!-- Preconexões de Performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- 
+  =========================================
+  ESPAÇO PARA TAGS DE RASTREIO (GOOGLE ADS / ANALYTICS)
+  =========================================
+-->
+<!-- Google Tag Manager / Global Site Tag (gtag.js) - Cole seu ID onde indicado -->
+<!-- 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'SEU-ID-AQUI');
+</script>
+-->
+
+<style>
+:root {
+  --black:       #0D0D0D;
+  --black-2:     #161616;
+  --black-3:     #1F1F1F;
+  --gold:        #C9A84C;
+  --gold-light:  #E2C67A;
+  --gold-dim:    rgba(201,168,76,0.12);
+  --gold-border: rgba(201,168,76,0.28);
+  --white:       #FFFFFF;
+  --gray-2:      #A0A0A0;
+  --gray-3:      #555555;
+  --red:         #E0533C;
+  --green:       #25D366;
+  --font:        'Inter', sans-serif;
+}
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font); background: var(--black); color: var(--white);
+  line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.875rem 2rem;
+  background: rgba(13,13,13,0.92); backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+.nav-logo img { height: 36px; width: auto; }
+.nav-cta {
+  background: var(--gold); color: var(--black);
+  padding: 0.6rem 1.5rem; border-radius: 6px;
+  font-size: 13.5px; font-weight: 700; white-space: nowrap;
+  transition: all .2s ease;
+  box-shadow: 0 4px 12px rgba(201,168,76,0.2);
+}
+.nav-cta:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+/* ── HERO ── */
+.hero {
+  min-height: 100svh;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  position: relative;
+  overflow: hidden;
+}
+
+/* LEFT — Form & Copy */
+.hero-left {
+  position: relative; z-index: 2;
+  background: var(--black);
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 7.5rem 3.5rem 4rem 3rem;
+}
+.hero-left::after {
+  content: '';
+  position: absolute; top: 0; right: 0; bottom: 0;
+  width: 100px;
+  background: linear-gradient(90deg, var(--black), transparent);
+  pointer-events: none;
+}
+
+/* RIGHT — Context Image */
+.hero-right {
+  position: relative;
+  background-image: url('https://marinasilvaadv.com.br/wp-content/uploads/2025/02/bg-1024x1024.jpg');
+  background-size: cover;
+  background-position: center top;
+}
+.hero-right::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(270deg, rgba(13,13,13,0.1) 0%, rgba(13,13,13,0.6) 50%, var(--black) 100%);
+}
+.hero-right-bottom {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  height: 4px; background: var(--gold);
+}
+
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--gold);
+  border: 1px solid var(--gold-border); background: var(--gold-dim);
+  padding: 6px 16px; border-radius: 100px; margin-bottom: 1.25rem;
+  width: fit-content;
+}
+.hero-eyebrow span { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
+.hero-h1 {
+  font-size: clamp(2.2rem, 3.8vw, 3.4rem);
+  font-weight: 900; line-height: 1.1; letter-spacing: -0.03em;
+  color: var(--white); margin-bottom: 1.2rem;
+}
+.hero-h1 em { font-style: normal; color: var(--gold); }
+.hero-desc {
+  font-size: 1.05rem; color: var(--gray-2); line-height: 1.7;
+  max-width: 520px; margin-bottom: 2rem;
+}
+
+/* ── FORM CARD (FOCO EM CONVERSÃO) ── */
+.form-card {
+  background: var(--black-2);
+  border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 14px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.form-title {
+  font-size: 17px; font-weight: 800; color: var(--white);
+  margin-bottom: 4px; letter-spacing: -0.01em;
+}
+.form-sub {
+  font-size: 13px; color: var(--gold-light); margin-bottom: 1.5rem; font-weight: 500;
+}
+.form-group { margin-bottom: 12px; }
+.form-input, .form-textarea, .form-select {
+  width: 100%;
+  background: var(--black-3);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 8px;
+  padding: 0.85rem 1.1rem;
+  font-family: var(--font);
+  font-size: 14px; color: var(--white);
+  transition: all .2s ease;
+  outline: none;
+}
+.form-input::placeholder, .form-textarea::placeholder { color: #666; }
+.form-input:focus, .form-textarea:focus, .form-select:focus {
+  border-color: var(--gold);
+  background: rgba(201,168,76,0.03);
+}
+.form-select { color: var(--white); cursor: pointer; appearance: none; -webkit-appearance: none; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23C9A84C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>"); background-repeat: no-repeat; background-position: right 12px center; background-size: 16px; }
+.form-select option { background: var(--black-2); color: var(--white); }
+.form-textarea { resize: vertical; min-height: 85px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.btn-form {
+  width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px;
+  background: var(--gold); color: var(--black);
+  padding: 1rem; border-radius: 8px;
+  font-family: var(--font); font-size: 15px; font-weight: 800;
+  border: none; cursor: pointer; text-transform: uppercase; letter-spacing: 0.03em;
+  transition: all .2s ease;
+  box-shadow: 0 4px 15px rgba(201,168,76,0.3);
+}
+.btn-form:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(201,168,76,0.4); }
+.form-privacy {
+  font-size: 11px; color: var(--gray-3); text-align: center; margin-top: 10px;
+}
+.form-privacy a { color: var(--gray-2); text-decoration: underline; }
+
+/* Mensagem de Sucesso Tratameno Moderno */
+.form-success {
+  display: none;
+  flex-direction: column; align-items: center; justify-content: center;
+  gap: 1.25rem; text-align: center; padding: 2.5rem 1rem;
+}
+.form-success-icon {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: rgba(37,211,102,0.15); border: 2px solid var(--green);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.8rem; color: var(--green);
+}
+.form-success h3 { font-size: 1.3rem; font-weight: 800; color: var(--white); }
+.form-success p { font-size: 14px; color: var(--gray-2); max-width: 320px; }
+
+/* Estatísticas Reforçadas */
+.hero-stats {
+  display: flex; gap: 0;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 1.75rem;
+}
+.stat { flex: 1; padding-right: 1.25rem; border-right: 1px solid rgba(255,255,255,0.08); margin-right: 1.25rem; }
+.stat:last-child { border-right: none; margin-right: 0; padding-right: 0; }
+.stat-num { font-size: 2.2rem; font-weight: 900; color: var(--white); line-height: 1; letter-spacing: -0.04em; }
+.stat-num span { color: var(--gold); font-size: 1.2rem; margin-left: 2px; }
+.stat-label { font-size: 11px; color: var(--gray-2); margin-top: 6px; line-height: 1.4; font-weight: 500; text-transform: uppercase; letter-spacing: 0.03em; }
+
+/* ── DIVISION BAR ── */
+.or-divider {
+  display: flex; align-items: center; gap: 12px; margin: 1.5rem 0;
+}
+.or-divider::before, .or-divider::after {
+  content: ''; flex: 1; height: 1px; background: rgba(255,255,255,0.1);
+}
+.or-divider span { font-size: 11px; color: var(--gray-2); font-weight: 700; letter-spacing: 0.08em; }
+
+/* WhatsApp Premium Button */
+.btn-wpp {
+  width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px;
+  background: rgba(37,211,102,0.08); color: var(--green);
+  border: 1.5px solid rgba(37,211,102,0.3);
+  padding: 0.95rem; border-radius: 8px;
+  font-family: var(--font); font-size: 15px; font-weight: 700;
+  cursor: pointer; transition: all .2s ease;
+  text-decoration: none; text-align: center;
+}
+.btn-wpp:hover { background: rgba(37,211,102,0.16); border-color: var(--green); transform: translateY(-1px); }
+
+/* ── ALERT STRIP ── */
+.alert-strip {
+  background: rgba(224,83,60,0.08);
+  border-top: 1px solid rgba(224,83,60,0.2);
+  border-bottom: 1px solid rgba(224,83,60,0.2);
+  padding: 1rem 2rem;
+  display: flex; align-items: center; justify-content: center;
+  gap: 12px;
+}
+.alert-strip p { font-size: 14px; color: #F08371; font-weight: 500; line-height: 1.5; }
+.alert-strip strong { color: #FFF; font-weight: 700; background: rgba(224,83,60,0.2); padding: 2px 6px; border-radius: 4px; margin-right: 4px; }
+
+/* ── DIVIDER LINE ── */
+.gold-rule { height: 1px; border: none; background: linear-gradient(90deg, transparent, var(--gold-border), transparent); }
+
+/* ── SECTIONS GENERAL ── */
+section { padding: 5.5rem 2rem; }
+.section-inner { max-width: 1140px; margin: 0 auto; }
+.section-label { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.6rem; }
+.section-title { font-size: clamp(1.9rem, 3.5vw, 2.6rem); font-weight: 850; line-height: 1.15; letter-spacing: -0.02em; color: var(--white); margin-bottom: 1rem; }
+.section-sub { font-size: 1.05rem; color: var(--gray-2); line-height: 1.75; max-width: 580px; margin-bottom: 3.5rem; }
+
+/* ── GRIDS (MOTIVOS PARA RECORRER) ── */
+.why-bg { background: var(--black-2); }
+.cases-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.case-card { background: var(--black-3); padding: 1.75rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.04); transition: all .25s ease; }
+.case-card:hover { border-color: var(--gold-border); transform: translateY(-3px); }
+.case-tag { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); background: var(--gold-dim); border: 1px solid var(--gold-border); padding: 3px 9px; border-radius: 4px; margin-bottom: 1rem; }
+.case-title { font-size: 15.5px; font-weight: 700; color: var(--white); margin-bottom: 8px; line-height: 1.4; }
+.case-body { font-size: 13.5px; color: var(--gray-2); line-height: 1.65; }
+
+/* ── STEPS PROCESSO ── */
+.steps-list { display: flex; flex-direction: column; }
+.step-item { display: flex; gap: 2rem; padding: 2rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); align-items: flex-start; }
+.step-item:last-child { border-bottom: none; }
+.step-number { font-size: clamp(2.8rem, 4vw, 3.8rem); font-weight: 900; color: rgba(201,168,76,0.12); line-height: 1; flex-shrink: 0; width: 70px; text-align: right; letter-spacing: -0.04em; transition: color .3s; }
+.step-item:hover .step-number { color: rgba(201,168,76,0.35); }
+.step-heading { font-size: 1.1rem; font-weight: 700; color: var(--white); margin-bottom: 6px; }
+.step-text { font-size: 14px; color: var(--gray-2); line-height: 1.7; }
+
+/* ── FAQ ACCORDION ── */
+.faq-bg { background: var(--black-2); }
+.faq-list { display: flex; flex-direction: column; max-width: 850px; }
+.faq-item { border-bottom: 1px solid rgba(255,255,255,0.05); }
+.faq-question { display: flex; justify-content: space-between; align-items: center; padding: 1.25rem 0; cursor: pointer; gap: 1rem; font-size: 15.5px; font-weight: 600; color: var(--white); background: none; border: none; width: 100%; text-align: left; transition: color .2s; }
+.faq-question:hover { color: var(--gold-light); }
+.faq-icon { flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%; border: 1px solid var(--gold-border); display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 15px; transition: transform .3s; }
+.faq-item.open .faq-icon { transform: rotate(45deg); }
+.faq-answer { font-size: 14px; color: var(--gray-2); line-height: 1.75; max-height: 0; overflow: hidden; padding-bottom: 0; transition: max-height .35s ease, padding-bottom .25s; }
+.faq-item.open .faq-answer { max-height: 350px; padding-bottom: 1.25rem; }
+
+/* ── FOOTER ── */
+footer { background: var(--black); border-top: 1px solid rgba(255,255,255,0.05); padding: 2rem; display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: space-between; align-items: center; }
+footer p { font-size: 12.5px; color: var(--gray-3); line-height: 1.5; }
+.footer-links { display: flex; gap: 1.75rem; flex-wrap: wrap; }
+.footer-links a { font-size: 12.5px; color: var(--gray-3); transition: color .2s; }
+.footer-links a:hover { color: var(--gold); }
+
+/* ── STICKY CONVERSÃO CONVERSÃO MOBILE ── */
+.sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 99; background: rgba(22,22,22,0.96); border-top: 1px solid var(--gold-border); padding: 0.85rem 1rem; gap: 10px; backdrop-filter: blur(8px); }
+.sticky-cta a { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 0.85rem; border-radius: 8px; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em; }
+.s-wpp { background: var(--green); color: #fff; box-shadow: 0 4px 10px rgba(37,211,102,0.2); }
+.s-tel { background: var(--gold); color: var(--black); }
+
+/* ── ANIMATION ENGINE ── */
+.fade-up { opacity: 0; transform: translateY(20px); transition: opacity .5s ease, transform .5s ease; }
+.fade-up.visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .fade-up { opacity: 1; transform: none; transition: none; } }
+
+/* ── RESPONSIVE DESIGN ARCHITECTURE ── */
+@media (max-width: 960px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-right { min-height: 340px; order: -1; }
+  .hero-right::before { background: linear-gradient(0deg, var(--black) 0%, rgba(13,13,13,0.3) 50%, transparent 100%); }
+  .hero-right-bottom { display: none; }
+  .hero-left { padding: 6rem 2rem 3rem; }
+  .hero-left::after { display: none; }
+}
+@media (max-width: 640px) {
+  nav { padding: 0.75rem 1.25rem; }
+  .nav-logo img { height: 32px; }
+  .hero-right { min-height: 250px; background-position: center 25%; }
+  .hero-left { padding: 2rem 1.25rem 4rem; }
+  .hero-h1 { font-size: clamp(1.9rem, 8.5vw, 2.5rem); }
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+  .form-card { padding: 1.5rem 1.25rem; }
+  section { padding: 3.5rem 1.25rem; }
+  footer { flex-direction: column; align-items: flex-start; gap: 1rem; padding-bottom: 6rem; }
+  .sticky-cta { display: flex; }
+  .alert-strip { padding: 1rem 1.25rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVEGAÇÃO -->
+<nav>
+  <div class="nav-logo">
+    <a href="../index.html"><img src="data:image/webp;base64,UklGRpYZAABXRUJQVlA4IIoZAABwXACdASqQAY0APjEYikOiIaETCkyQIAMEpu4XaxEZcdf9STzX9h/br2Sq5/kvxf7C+m3qz/S/aB7z/kH6L/mf77+73+M+b/+W/vHsd8wL9Yf1w6x37SeoD9h/+t/hPdP/wH+i/4Hua/a7/o+4B/IP5v/0faC/5HsP/37/f+wL/KP8d/8/Z0/5P7QfB7/Yf9N+1HwO/sP/7usA/+3E3fyDtc/rv5H+g/4v8t/TvyD/tP/X590SP4z9bvsn9j/Zj+xfst8pf6rwl+PP8f+SnwBfhv8x/un5Uf3T90uQz2HzAvaT6B/pv75+6P+N9JH/D9C/rZ/tPy3+gD+N/zf+6f2r9pf8H///pL/feGx5J+vHwAfyT+ef6r+u/4v/yf6j6Yf53/o/5r93v8X7a/oH/jf47/BftN9hX8o/p/+1/vv70/5L///+z74fZb+6Xsofs+QWLDijRXBkWsp+PcWHFGiuDItZT8e4sOKNFbe/izt9X7o5DwlP2KnKOHjylotZLKGiuDItZT8e4qpugjlnjaau+jYLNwlacMVlkpAQa8cLiWOuMpcVu/5kMYJ4cFIHWrJLUYXddQiNX9dhbMcSOAxyaK6YDzlkyS3q788hRKrHhJeBhd94edgbPTVQXO1jLy1tFCaNUtm5Zub64ISRwI+Mlmz0S+o1/Ipd0ZbP5+rkACpWdKuAVTtTDPD8NqwLHzbpbhODn3sAO2lycRERs/BqZER9wg5mlyGMgGySnwjhk9e6PpBjdeh0R/VFaLCuV0NaIIdit2Gs0+iKfHtGWlzaWjolG14ZNGV7EiO2PVDqEp2Ro5+mfP7qKcqa+q7Sg5K7GCnAOt1DR1Xq622AvkbSI3nR9KrDvl2ONpDlYeEw3DqpyYXxVcLeG4DerG6nOvGoWwKillGUl1gYk1Iuj1Yxera84meoy4Osiu8Tf47fEz1BkbNY3teFWdMB12Ivj3FhxWAn5a4VwZFrKfj3FhxRorgyLWU/HuLDigwAAP7/80uAAA2Pg1kCkmXrnF5Hkn3+jYbJftESlPdqq1qjV6eY7/fxB+XUOKI6i5kZKJRdR8nB8Hnn8WJ+1xyVsf/YFMaIV+sM8mh6v/vgvyk4ArwntvMv/vowAtzHUQway4+nECf5R6re+9d3fQnFG81O6vA6KKYV9LZ5F0iFtQV3xazYewEz5izvXnFiJWWxRADvqqYO+ePjK+9fkyhEqv4DvcYfAUYFjDdbrg3aNzNpGZcBlgI5Jc4yrG2poke6PrBjdeh0R/VFaLCuV0NaIIdit2Gs0+iKfHtGWlzaWjolG14ZNGV7EiO2PVDqEp2Ro5+mfP7qKcqa+q7Sg5K7GCnAOt1DR1Xq622AvkbSI3nR9KrDvl2ONpDlYeEw3DqpyYXxVcLeG4DerG6nOvGoWwKillGUl1gYk1Iuj1Yxera84meoy4Osiu8Tf47fEz1BkbNY3teFWdMB12Ivj3FhxWAn5a4VwZFrKfj3FhxRorgyLWU/HuLDigwAAP7/80uAAA2Pg1kCkmXrnF5Hkn3+jYbJftESlPdqq1qjV6eY7/fxB+XUOKI6i5kZKJRdR8nB8Hnn8WJ+1xyVsf/YFMaIV+sM8mh6v/vgvyk4ArwntvMv/vowAtzHUQway4+nECf5R6re+9d3fQnFG81O6vA6KKYV9LZ5F0iFtQV3xazYewEz5izvXnFiJWWxRADvqqYO+ePjK+9fkyhEqv4DvcYfAUYFjDdbrg3aNzNpGZcBlgI5Jc4yrG2p" alt="Achiles Melo Advocacia"></a>
+  </div>
+  <a href="https://wa.me/5511913473579?text=Olá,%20Doutor.%20Preciso%20de%20uma%20análise%20urgente%20para%20recurso%20de%20multa." class="nav-cta" target="_blank" rel="noopener">Análise de Caso</a>
+</nav>
+
+<!-- HERO PRINCIPAL -->
+<section class="hero">
+
+  <!-- LADO ESQUERDO: TEXTO E CONVERSÃO -->
+  <div class="hero-left">
+    <div class="hero-eyebrow">
+      <span aria-hidden="true"></span>
+      Defesa em Direito de Trânsito · Consultoria Especializada
+    </div>
+    <h1 class="hero-h1">
+      Evite a suspensão da sua CNH e <em>ancele multas</em> irregulares.
+    </h1>
+    <p class="hero-desc">
+      Não pague por erros administrativos do órgão de trânsito. Analisamos falhas técnicas em radares, notificações enviadas fora do prazo e inconsistências autos de infração. Proteja seu direito de dirigir de forma rápida e segura.
+    </p>
+
+    <!-- FORMULÁRIO COMPACTO DE ALTA CONVERSÃO -->
+    <div class="form-card">
+      <p class="form-title">Solicitar Análise Jurídica Gratuita</p>
+      <p class="form-sub">Avaliamos as chances reais de anulação do seu caso hoje.</p>
+
+      <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="d952b984-0c90-466a-82bf-af37481b47bb">
+        <input type="hidden" name="subject" value="Nova Lead Ads — Recurso de Trânsito">
+        <input type="hidden" name="from_name" value="Landing Page Trânsito">
+        <input type="hidden" name="redirect" value="false">
+        <input type="checkbox" name="botcheck" style="display:none">
+
+        <div class="form-row">
+          <div class="form-group">
+            <input class="form-input" type="text" name="name" placeholder="Seu nome completo *" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <input class="form-input" type="tel" name="phone" placeholder="WhatsApp com DDD *" required autocomplete="tel">
+          </div>
+        </div>
+        <div class="form-group">
+          <input class="form-input" type="email" name="email" placeholder="Seu melhor e-mail (opcional)" autocomplete="email">
+        </div>
+        <div class="form-group">
+          <select class="form-input form-select" name="tipo_caso" required>
+            <option value="" disabled selected>Qual problema você enfrenta?</option>
+            <option value="bafometro_recusa">Multa da Lei Seca / Recusa ao Bafômetro</option>
+            <option value="cnh_suspensa">Processo de Suspensão ou Cassação da CNH</option>
+            <option value="radar_irregular">Radar Irregular ou Sem Aferição Recente</option>
+            <option value="notificacao_prazo">Notificação Recebida Fora do Prazo Legal</option>
+            <option value="multa_indevida">Multa em Local Onde Nunca Estive</option>
+            <option value="outro">Outras Autuações Graves/Gravíssimas</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea class="form-textarea" name="message" placeholder="Escreva resumidamente os detalhes da infração para agilizar a triagem..."></textarea>
+        </div>
+        <button type="submit" class="btn-form" id="submitBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Enviar Para Análise Técnica
+        </button>
+        <p class="form-privacy">Garantia de sigilo absoluto conforme as diretrizes gerais da LGPD. <a href="../privacidade.html">Termos</a>.</p>
+      </form>
+
+      <!-- Resposta de Sucesso Estruturada para Eventos -->
+      <div class="form-success" id="formSuccess">
+        <div class="form-success-icon">✓</div>
+        <h3>Análise Iniciada com Sucesso!</h3>
+        <p>Os detalhes do caso foram enviados para nossa equipe interna. Entraremos em contato via WhatsApp nas próximas horas.</p>
+      </div>
+    </div>
+
+    <!-- DIVISOR FLUIDO -->
+    <div class="or-divider"><span>OU SE PREFERIR RESPOSTA IMEDIATA</span></div>
+    <a href="https://wa.me/5511913473579?text=Olá,%20Doutor.%20Preciso%20de%20ajuda%20com%20um%20recurso%20de%20trânsito%20urgente." target="_blank" rel="noopener" class="btn-wpp">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Chamar Diretamente no WhatsApp
+    </a>
+
+    <!-- GATILHOS DE PROVA SOCIAL INDIRETA / SEGURANÇA -->
+    <div class="hero-stats" style="margin-top:1.75rem">
+      <div class="stat"><div class="stat-num">30<span>d</span></div><div class="stat-label">Prazo médio de trâmite inicial</div></div>
+      <div class="stat"><div class="stat-num">3<span>Níveis</span></div><div class="stat-label">De Instâncias recursais administrativas</div></div>
+      <div class="stat"><div class="stat-num">100<span>%</span></div><div class="stat-label">Digitalizado e sem sair de casa</div></div>
+    </div>
+  </div>
+
+  <!-- COLUNA DIREITA: IMAGEM DE CONTEXTO JURÍDICO/TRÂNSITO -->
+  <div class="hero-right" role="img" aria-label="Abordagem de trânsito em rodovia">
+    <div class="hero-right-bottom"></div>
+  </div>
+
+</section>
+
+<!-- ALERT STRIP ATUALIZADA (GATILHO DE PERDA) -->
+<div class="alert-strip" role="alert">
+  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#E0533C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+  <p><strong>Atenção Crucial:</strong> Perder prazos impostos pelo DETRAN/Órgãos Municipais elimina o direito de contestação e gera a aplicação imediata da penalidade em prontuário. Entre em contato antes do vencimento impresso na Notificação.</p>
+</div>
+
+<hr class="gold-rule">
+
+<!-- SITUAÇÕES REAIS DE ATUAÇÃO -->
+<section class="why-bg fade-up">
+  <div class="section-inner">
+    <p class="section-label">Fundamentos Jurídicos</p>
+    <h2 class="section-title">Erros cometidos pelos órgãos que anulam penalidades</h2>
+    <p class="section-sub">A administração pública deve seguir regras estritas de legalidade. Havendo descumprimento, a nulidade do processo é um direito seu.</p>
+    
+    <div class="cases-grid">
+      <div class="case-card">
+        <span class="case-tag">Placa e Identidade</span>
+        <p class="case-title">Erro Material na Placa ou Local</p>
+        <p class="case-body">Autuações geradas em locais onde o veículo comprovadamente nunca circulou devido a falhas em sistemas ópticos ou clonagem veicular.</p>
+      </div>
+      <div class="case-card">
+        <span class="case-tag">Metrologia</span>
+        <p class="case-title">Radares sem Aferição Operacional do INMETRO</p>
+        <p class="case-body">Conforme resoluções do CONTRAN, radares de velocidade precisam obrigatoriamente de aferição periódica do INMETRO. Sem isso, o auto é insubsistente.</p>
+      </div>
+      <div class="case-card">
+        <span class="case-tag">Sinalização Coletiva</span>
+        <p class="case-title">Sinalização Viária Ineficiente</p>
+        <p class="case-body">Placas cobertas por vegetação, deterioradas ou em desacordo com as especificações formais do Manual de Sinalização impedem a punição.</p>
+      </div>
+      <div class="case-card">
+        <span class="case-tag">Prazos de Envio</span>
+        <p class="case-title">Notificação Expedida Fora de 30 Dias</p>
+        <p class="case-body">A legislação impõe que o auto seja expedido em no máximo 30 dias contados da data do fato. Notificações fora da janela decaem de pleno direito.</p>
+      </div>
+      <div class="case-card">
+        <span class="case-tag">Responsabilidade</span>
+        <p class="case-title">Inocência por Condutor Divergente</p>
+        <p class="case-body">Infrações de responsabilidade puramente do condutor que foram vinculadas erroneamente ao proprietário sem dar o prazo constitucional de indicação.</p>
+      </div>
+      <div class="case-card">
+        <span class="case-tag">Formalismo Legal</span>
+        <p class="case-title">Vícios de Lavratura no Auto</p>
+        <p class="case-body">A falta de assinatura obrigatória do agente, omissão de enquadramentos ou dados imprecisos geram arquivamento imediato.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="gold-rule">
+
+<!-- FLUXO DO ATENDIMENTO -->
+<section class="fade-up">
+  <div class="section-inner">
+    <p class="section-label">Fluxo Operacional</p>
+    <h2 class="section-title">Como estruturamos sua defesa sem burocracia</h2>
+    <p class="section-sub">Processamento centralizado e 100% digitalizado para garantir conformidade e acompanhamento em todas as esferas administrativas.</p>
+    
+    <div class="steps-list">
+      <div class="step-item">
+        <div class="step-number" aria-hidden="true">01</div>
+        <div>
+          <h3 class="step-heading">Envio e Triagem de Documentos</h3>
+          <p class="step-text">Você nos fornece uma foto ou PDF do Auto de Infração/Notificação de forma segura por meio do nosso formulário ou canal oficial de atendimento.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-number" aria-hidden="true">02</div>
+        <div>
+          <h3 class="step-heading">Auditoria e Parecer Jurídico</h3>
+          <p class="step-text">Analisamos a existência de vícios formais e selecionamos teses embasadas na jurisprudência dos conselhos superiores de trânsito.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-number" aria-hidden="true">03</div>
+        <div>
+          <h3 class="step-heading">Protocolização Técnica Prazada</h3>
+          <p class="step-text">Redigimos e protocolamos a Defesa Prévia ou os Recursos direcionados à JARI, CETRAN ou CONTRAN em total cumprimento às exigências de prazo.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-number" aria-hidden="true">04</div>
+        <div>
+          <h3 class="step-heading">Monitoramento Processual Contínuo</h3>
+          <p class="step-text">Nossa banca acompanha as pautas de julgamento dos colegiados de trânsito e informamos o cliente sobre as decisões obtidas em tempo real.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="gold-rule">
+
+<!-- FAQ REESTRUTURADO -->
+<section class="faq-bg fade-up">
+  <div class="section-inner">
+    <p class="section-label">Perguntas Frequentes</p>
+    <h2 class="section-title">Esclarecimentos Legais Importantes</h2>
+    <p class="section-sub">Informações diretas de acordo com as normas atualizadas do Código de Trânsito Brasileiro (CTB).</p>
+    
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Mesmo tendo pago o valor da multa, eu ainda posso recorrer?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer">Sim. O pagamento da multa de trânsito é opcional para interposição de recurso e não configura aceitação da infração. Se o recurso for julgado deferido, você tem o direito garantido por lei de requerer a restituição integral do valor desembolsado.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Como funciona a suspensão de pontos na CNH enquanto o recurso corre?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer">Enquanto houver recurso em andamento na esfera administrativa, a penalidade não pode produzir efeitos práticos negativos. Os pontos não são imputados em seu prontuário final e a CNH segue em status regular até a decisão de última instância.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">É obrigatório ir presencialmente a um posto do DETRAN ou Poupatempo?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer">Não. Todos os protocolos de recurso, envio de procurações contratuais e defesas podem ser conduzidos de forma inteiramente remota pelos sistemas integrados de peticionamento eletrônico da advocacia.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">A atuação do escritório restringe-se apenas à região de Mogi das Cruzes?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer">Não. Embora estejamos sediados em Mogi das Cruzes/SP, possuímos infraestrutura digital centralizada capaz de protocolar contestações administrativas e atuar perante qualquer órgão de trânsito federal, estadual ou municipal em todo o território brasileiro.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RODAPÉ INSTITUCIONAL DE COMPLIANCE -->
+<footer>
+  <div>
+    <p>© 2026 Achiles Melo Advocacia. Todos os direitos reservados.</p>
+    <p style="margin-top:3px; opacity: 0.6;">Inscrição OAB/SP 494.216 · Mogi das Cruzes, São Paulo</p>
+  </div>
+  <div class="footer-links">
+    <a href="../privacidade.html">Política de Privacidade</a>
+    <a href="../aviso-legal.html">Aviso Legal</a>
+    <a href="https://www.instagram.com/achilesmelo.adv" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</footer>
+
+<!-- CTAS PERSISTENTES PARA DISPOSITIVOS MOBILE -->
+<div class="sticky-cta" aria-label="Ações Rápidas de Atendimento">
+  <a href="https://wa.me/5511913473579?text=Olá,%20Doutor.%20Preciso%20de%20ajuda%20com%20um%20recurso%20de%20trânsito%20urgente." target="_blank" rel="noopener" class="s-wpp">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp Falar Já
+  </a>
+  <a href="tel:+5511913473579" class="s-tel">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+    Ligar
+  </a>
+</div>
+
+<script>
+// Mecanismo de Observação de Animações Fluidas
+const obs = new IntersectionObserver(entries => entries.forEach(entry => { if(entry.isIntersecting){ entry.target.classList.add('visible'); obs.unobserve(entry.target); } }), {threshold:.05});
+document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+
+// Mecanismo Accordion FAQ Exclusivo e Sem Conflitos de Estado
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(openedItem => { 
+      openedItem.classList.remove('open'); 
+      openedItem.querySelector('.faq-question').setAttribute('aria-expanded','false'); 
+    });
+    if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+  });
+});
+
+// Envio Assíncrono com Disparo de Evento de Rastreamento (Web3Forms)
+const form = document.getElementById('contactForm');
+const btn = document.getElementById('submitBtn');
+const successDiv = document.getElementById('formSuccess');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  btn.disabled = true;
+  btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg> Processando...';
+
+  try {
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: new FormData(form)
+    });
+    const data = await res.json();
+    if (data.success) {
+      form.style.display = 'none';
+      successDiv.style.display = 'flex';
+      
+      // =========================================================================
+      // DISPARO DE CONVERSÃO EXCLUSIVO PARA GOOGLE TAG MANAGER / ANALYTICS
+      // =========================================================================
+      // Emite um evento nativo que você pode mapear no GTM como "Custom Event"
+      window.dispatchEvent(new CustomEvent('form_submission_success', { detail: { category: 'recurso_transito' } }));
+      
+      // Rastreio direto via gtag tradicional (Descomente caso use instalação direta)
+      /* if (typeof gtag === 'function') {
+           gtag('event', 'conversion', {'send_to': 'SEU-ID-DE-CONVERSAO-AQUI'});
+         } 
+      */
+    } else {
+      throw new Error('Erro do servidor de formulários');
+    }
+  } catch(err) {
+    btn.disabled = false;
+    btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Enviar Para Análise Técnica';
+    alert('Erro no envio interno. Use o botão do WhatsApp para atendimento imediato.');
+  }
+});
+</script>
+</body>
+</html>
