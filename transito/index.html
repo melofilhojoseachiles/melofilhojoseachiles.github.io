@@ -52,7 +52,7 @@ nav {
 }
 .nav-cta:hover { background: var(--gold-light); }
 
-/* ── HERO STRUCT (CORREÇÃO DE BORDAS E DO VAZAMENTO) ── */
+/* ── HERO STRUCT ── */
 .hero {
   min-height: 100svh;
   display: flex;
@@ -60,10 +60,10 @@ nav {
   align-items: stretch;
   position: relative;
   overflow: hidden;
-  padding-top: 64px; /* Compensação da Nav fixa */
+  padding-top: 64px;
 }
 
-/* COLUNA ESQUERDA — Texto e Formulários Protegidos contra cortes */
+/* COLUNA ESQUERDA — Texto e Formulários */
 .hero-left {
   flex: 1 1 550px;
   background: var(--black);
@@ -71,20 +71,26 @@ nav {
   flex-direction: column;
   justify-content: center;
   padding: 4rem 3.5rem 4rem 3rem;
+  position: relative;
+  z-index: 5;
 }
 
-/* COLUNA DIREITA — Imagem Corrigida e Carregada Exclusivamente via URL */
+/* COLUNA DIREITA — Com efeito de Sombra Gradiente (Esquerda para Direita) */
 .hero-right {
   flex: 1 1 450px;
   min-height: 400px;
   position: relative;
-  background: var(--black-2);
+  background: var(--black); /* Fundo igual ao principal para casar com o degradê */
 }
 .side-form-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  
+  /* Aplicação do Gradiente que cria a sombra da esquerda para a direita */
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 15%, rgba(0,0,0,1) 100%);
+  mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 15%, rgba(0,0,0,1) 100%);
 }
 .hero-right-bottom {
   position: absolute; bottom: 0; left: 0; right: 0;
@@ -112,12 +118,12 @@ nav {
   max-width: 460px; margin-bottom: 2rem;
 }
 
-/* ── FORM CARD (PROTEÇÃO EXTRA CONTRA CANTOS CORTADOS) ── */
+/* ── FORM CARD ── */
 .form-card {
   background: var(--black-2);
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 14px;
-  padding: 2rem; /* Aumentado para empurrar elementos para dentro e revelar bordas */
+  padding: 2rem;
   margin-bottom: 1.75rem;
   width: 100%;
   box-sizing: border-box;
@@ -131,12 +137,11 @@ nav {
 }
 .form-group { margin-bottom: 12px; width: 100%; }
 
-/* CORREÇÃO ESTÁTICA DOS CANTOS DOS INPUTS, SELECT E TEXTAREA */
 .form-input, .form-textarea, .form-select {
   width: 100%;
   background: var(--black-3) !important;
   border: 1px solid rgba(255,255,255,0.1) !important;
-  border-radius: 8px !important; /* Cantos arredondados fixados */
+  border-radius: 8px !important;
   padding: 0.75rem 1rem !important;
   font-family: var(--font);
   font-size: 14px !important; 
@@ -155,11 +160,10 @@ nav {
 .form-row { display: flex; gap: 12px; width: 100%; }
 .form-row .form-group { flex: 1; margin-bottom: 0; }
 
-/* BOTÃO DE SUBMIT COM CANTOS PERFEITOS */
 .btn-form {
   width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px;
   background: var(--gold); color: var(--black);
-  padding: 0.95rem; border-radius: 8px !important; /* Ajustado */
+  padding: 0.95rem; border-radius: 8px !important;
   font-family: var(--font); font-size: 1rem; font-weight: 800;
   border: none; cursor: pointer;
   transition: background .2s, transform .15s;
@@ -195,12 +199,12 @@ nav {
 }
 .or-divider span { font-size: 11px; color: var(--gray-3); font-weight: 600; letter-spacing: 0.05em; }
 
-/* CORREÇÃO INTEGRAL DO BOTÃO DO WHATSAPP (MANTENDO CORES ATUAIS) */
+/* BOTÃO DO WHATSAPP */
 .btn-wpp {
   width: 100% !important; display: flex !important; align-items: center !important; justify-content: center !important; gap: 10px !important;
   background: rgba(37,211,102,0.1) !important; color: #25D366 !important;
   border: 1.5px solid rgba(37,211,102,0.3) !important;
-  padding: 0.875rem !important; border-radius: 8px !important; /* Cantos arredondados corrigidos */
+  padding: 0.875rem !important; border-radius: 8px !important;
   font-family: var(--font); font-size: 0.95rem !important; font-weight: 700 !important;
   cursor: pointer; transition: background .2s, border-color .2s;
   text-decoration: none !important; text-align: center !important;
@@ -242,7 +246,7 @@ section.generic-section { padding: 5rem 2rem; }
 .section-title { font-size: clamp(1.75rem, 3.5vw, 2.5rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.025em; color: var(--white); margin-bottom: 1rem; }
 .section-sub { font-size: 1rem; color: var(--gray-2); line-height: 1.8; max-width: 540px; margin-bottom: 2.75rem; }
 
-/* ── PROFILE SECTION (FOTO RECORTE CIRCULAR REAL) ── */
+/* ── PROFILE SECTION (Nome Completo Atualizado) ── */
 .profile-section { background: var(--black-2); border-bottom: 1px solid rgba(255,255,255,0.06); padding: 3rem 2rem; }
 .profile-container { display: flex; align-items: center; gap: 2.5rem; max-width: 900px; margin: 0 auto; }
 .profile-avatar-container { flex-shrink: 0; width: 105px; height: 105px; border-radius: 50%; border: 2px solid var(--gold); padding: 3px; background: var(--black-2); overflow: hidden; display: flex; align-items: center; justify-content: center; }
@@ -303,6 +307,10 @@ footer p { font-size: 12px; color: var(--gray-3); }
 @media (max-width: 960px) {
   .hero { flex-direction: column; }
   .hero-right { min-height: 340px; order: -1; flex: 1 1 auto; }
+  
+  /* Remove a máscara em telas menores para a imagem não sumir no topo do celular */
+  .side-form-image { -webkit-mask-image: none; mask-image: none; }
+  
   .hero-left { padding: 3rem 1.5rem 3rem; flex: 1 1 auto; }
   .profile-container { flex-direction: column; text-align: center; gap: 1.25rem; }
 }
@@ -324,6 +332,7 @@ footer p { font-size: 12px; color: var(--gray-3); }
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
   <div class="nav-logo">
     <a href="../index.html"><img src="data:image/webp;base64,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先行3CW1Ow/NMSxhQg3NkZZA51AhjimDowc4ybi3NQh5p6sAAAAAAAAAAAAAAAAA" alt="Achiles Melo Advocacia"></a>
@@ -331,8 +340,10 @@ footer p { font-size: 12px; color: var(--gray-3); }
   <a href="https://wa.me/5511913473579?text=Olá,%20vim%20pelo%20site%20e%20quero%20recorrer%20de%20uma%20multa" class="nav-cta" target="_blank" rel="noopener">Falar agora</a>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
 
+  <!-- COLUNA ESQUERDA: Texto e Formulários -->
   <div class="hero-left">
     <div class="hero-eyebrow">
       <span aria-hidden="true"></span>
@@ -410,6 +421,7 @@ footer p { font-size: 12px; color: var(--gray-3); }
     </div>
   </div>
 
+  <!-- COLUNA DIREITA: Imagem Desvanecendo com Sombra da Esquerda para a Direita -->
   <div class="hero-right">
     <img src="https://raw.githubusercontent.com/achilesmeloadvocacia/achilesmeloadvocacia.github.io/refs/heads/main/transito/pm-multa.jpg" alt="Fiscalização de trânsito pela Polícia Militar" class="side-form-image">
     <div class="hero-right-bottom"></div>
@@ -417,6 +429,7 @@ footer p { font-size: 12px; color: var(--gray-3); }
 
 </section>
 
+<!-- ALERT -->
 <div class="alert-strip" role="alert">
   <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#F09575" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
   <p><strong>Atenção:</strong> Toda autuação possui falhas formais ou processuais que podem invalidar a cobrança e os pontos. Não abra mão do seu direito de defesa.</p>
@@ -424,11 +437,12 @@ footer p { font-size: 12px; color: var(--gray-3); }
 
 <hr class="gold-rule">
 
+<!-- BLOCO DE QUALIFICAÇÃO (Nome Completo Ajustado) -->
 <section class="profile-section">
   <div class="section-inner">
     <div class="profile-container">
       <div class="profile-avatar-container">
-        <img class="profile-avatar-img" src="https://github.com/achilesmeloadvocacia/achilesmeloadvocacia.github.io/blob/main/imagens/advogado.png?raw=true" alt="Dr. José Achiles Donizetti de Melo Filho">
+        <img class="profile-avatar-img" src="SUA-FOTO.jpg" alt="Dr. José Achiles Donizetti de Melo Filho">
       </div>
       <div class="profile-info">
         <h3 class="profile-name">Dr. José Achiles Donizetti de Melo Filho</h3>
@@ -441,6 +455,7 @@ footer p { font-size: 12px; color: var(--gray-3); }
 
 <hr class="gold-rule">
 
+<!-- GRID DE INFRAÇÕES -->
 <section class="why-bg generic-section fade-up">
   <div class="section-inner">
     <p class="section-label">Infrações comuns</p>
@@ -493,6 +508,7 @@ footer p { font-size: 12px; color: var(--gray-3); }
 
 <hr class="gold-rule">
 
+<!-- COMO FUNCIONA -->
 <section class="generic-section fade-up">
   <div class="section-inner">
     <p class="section-label">Como funciona</p>
@@ -509,6 +525,7 @@ footer p { font-size: 12px; color: var(--gray-3); }
 
 <hr class="gold-rule">
 
+<!-- FAQ -->
 <section class="faq-bg generic-section fade-up">
   <div class="section-inner">
     <p class="section-label">Dúvidas frequentes</p>
@@ -524,6 +541,7 @@ footer p { font-size: 12px; color: var(--gray-3); }
   </div>
 </section>
 
+<!-- FOOTER (Nome Completo Atualizado) -->
 <footer>
   <div><p>© 2026 José Achiles Donizetti de Melo Filho. Todos os direitos reservados.</p><p style="margin-top:3px">OAB/SP 494.216 · Atendimento Digital Nacional</p></div>
   <div class="footer-links">
@@ -533,6 +551,7 @@ footer p { font-size: 12px; color: var(--gray-3); }
   </div>
 </footer>
 
+<!-- STICKY MOBILE -->
 <div class="sticky-cta" aria-label="Contato rápido">
   <a href="https://wa.me/5511913473579?text=Olá,%20quero%20recorrer%20de%20uma%20multa" target="_blank" rel="noopener" class="s-wpp">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -549,7 +568,7 @@ footer p { font-size: 12px; color: var(--gray-3); }
 const obs = new IntersectionObserver(e => e.forEach(x => { if(x.isIntersecting){ x.target.classList.add('visible'); obs.unobserve(x.target); } }), {threshold:.08});
 document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
 
-// FAQ Toggle mechanism
+// FAQ Toggle
 document.querySelectorAll('.faq-question').forEach(btn => {
   btn.addEventListener('click', () => {
     const item = btn.parentElement;
@@ -559,7 +578,7 @@ document.querySelectorAll('.faq-question').forEach(btn => {
   });
 });
 
-// Form submission processor (Web3Forms endpoint backend)
+// Form submission processor
 const form = document.getElementById('contactForm');
 const btn = document.getElementById('submitBtn');
 const successDiv = document.getElementById('formSuccess');
