@@ -169,6 +169,7 @@ h1 em { font-style: normal; color: var(--gold); }
   border-radius: 16px;
   padding: 3rem 2.5rem;
   box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+  position: relative;
 }
 .form-header {
   text-align: center;
@@ -248,6 +249,44 @@ h1 em { font-style: normal; color: var(--gold); }
   transform: translateY(-1px);
   box-shadow: 0 6px 20px rgba(201,168,76,0.35);
   filter: brightness(1.1);
+}
+.btn-submit-form:disabled {
+  background: #555;
+  color: #aaa;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* BLOCO DE SUCESSO (DENTRO DA BOX DO FORMULÁRIO) */
+.form-success-message {
+  display: none; /* Controlado via JS */
+  text-align: center;
+  padding: 2rem 1rem;
+  animation: fadeIn 0.4s ease forwards;
+}
+.success-icon {
+  font-size: 48px;
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+}
+.success-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+.success-text {
+  font-size: 15px;
+  color: var(--gray-2);
+  max-width: 540px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* SEÇÃO ALTERNATIVA (WHATSAPP FORA DO FORMULÁRIO) */
@@ -357,7 +396,7 @@ footer p { font-size: 12px; color: var(--gray-3); line-height: 1.7; }
   .nav-logo-img { height: 26px; }
   .form-group-row { grid-template-columns: 1fr; gap: 20px; }
   .segments { padding: 3.5rem 1rem; }
-  .nav-cta-whatsapp span { display: none; } /* Oculta o texto em telas pequenas para não quebrar a barra */
+  .nav-cta-whatsapp span { display: none; }
 }
 </style>
 </head>
@@ -382,7 +421,7 @@ footer p { font-size: 12px; color: var(--gray-3); line-height: 1.7; }
       <div class="badge"><span></span>Recuperação de Canais de Vendas</div>
       <h1>Seu WhatsApp Business foi <em>banido injustamente?</em></h1>
       <p class="subtitle">
-        Empresas e profissionais liberais perdem o acesso às suas contas comerciais todos os dias por erros nos algoritmos de inteligência artificial. Se a sua ferramenta de trabalho foi bloqueada sem uma justificativa clara, saiba que há um caminho legal para reaver sua conta.
+        Empresas e profissionais liberais perdem o acesso às suas </p>Contas comerciais todos os dias por erros nos algoritmos de inteligência artificial. Se a sua ferramenta de trabalho foi bloqueada sem uma justificativa clara, saiba que há um caminho legal para reaver sua conta.
       </p>
 
       <!-- CONTAINER DE SINTOMAS -->
@@ -408,47 +447,63 @@ footer p { font-size: 12px; color: var(--gray-3); line-height: 1.7; }
   <!-- SEÇÃO DO FORMULÁRIO DE CAPTAÇÃO -->
   <section class="form-section">
     <div class="form-box">
-      <div class="form-header">
-        <h2 class="form-title">Fale com um Advogado Especialista em Direito Digital</h2>
-        <p class="form-subtitle">Preencha os campos abaixo para iniciar a análise do seu caso e buscar o <strong>restabelecimento definitivo</strong> do seu número.</p>
+      
+      <!-- ENVOLTÓRIO DO CONTEÚDO DO FORMULÁRIO (PARA PODER SER OCULTADO) -->
+      <div id="form-wrapper">
+        <div class="form-header">
+          <h2 class="form-title">Fale com um Advogado Especialista em Direito Digital</h2>
+          <p class="form-subtitle">Preencha os campos abaixo para iniciar a análise do seu caso e buscar o <strong>restabelecimento definitivo</strong> do seu número.</p>
+        </div>
+
+        <form id="contact-form" class="main-contact-form">
+          <!-- COLOQUE SUA CHAVE DO WEB3FORMS AQUI -->
+          <input type="hidden" name="access_key" value="COLOQUE_AQUI_A_SUA_CHAVE_DO_WEB3FORMS">
+          <input type="hidden" name="subject" value="Nova Solicitação: Recuperação de WhatsApp Banido">
+          <input type="checkbox" name="botcheck" style="display: none;">
+
+          <div class="form-control">
+            <label for="name">Nome Completo</label>
+            <input type="text" name="name" id="name" placeholder="Ex: João Silva" required>
+          </div>
+
+          <div class="form-group-row">
+            <div class="form-control">
+              <label for="email">E-mail de Contato</label>
+              <input type="email" name="email" id="email" placeholder="Ex: joao@empresa.com" required>
+            </div>
+            <div class="form-control">
+              <label for="phone">WhatsApp / Telefone</label>
+              <input type="tel" name="phone" id="phone" placeholder="Ex: (11) 99999-9999" required>
+            </div>
+          </div>
+
+          <div class="form-control">
+            <label for="message">Detalhes do Bloqueio (Opcional)</label>
+            <textarea name="message" id="message" placeholder="Conte resumidamente o que aparece na tela do seu aplicativo ou o motivo alegado..."></textarea>
+          </div>
+
+          <button type="submit" id="submit-btn" class="btn-submit-form">
+            Enviar Dados para Análise
+          </button>
+
+          <p class="form-disclaimer">
+            <strong>Nota de integridade:</strong> O envio deste formulário estabelece contato de atendimento preliminar diretamente com escritório jurídico privado. Não possuímos representação, vínculo ou endosso do suporte oficial corporativo das plataformas Meta.
+          </p>
+        </form>
       </div>
 
-      <form action="https://api.web3forms.com/submit" method="POST" class="main-contact-form">
-        
-        <!-- INSIRA SUA ACCESS KEY DO WEB3FORMS NO VALUE ABAIXO -->
-        <input type="hidden" name="access_key" value="0b4d632d-9d72-4840-b2b1-e8d104f35d71">
-        <input type="hidden" name="subject" value="Nova Solicitação: Recuperação de WhatsApp Banido">
-        <input type="checkbox" name="botcheck" id="" style="display: none;">
-
-        <div class="form-control">
-          <label for="name">Nome Completo</label>
-          <input type="text" name="name" id="name" placeholder="Ex: João Silva" required>
-        </div>
-
-        <div class="form-group-row">
-          <div class="form-control">
-            <label for="email">E-mail de Contato</label>
-            <input type="email" name="email" id="email" placeholder="Ex: joao@empresa.com" required>
-          </div>
-          <div class="form-control">
-            <label for="phone">WhatsApp / Telefone</label>
-            <input type="tel" name="phone" id="phone" placeholder="Ex: (11) 99999-9999" required>
-          </div>
-        </div>
-
-        <div class="form-control">
-          <label for="message">Detalhes do Bloqueio (Opcional)</label>
-          <textarea name="message" id="message" placeholder="Conte resumidamente o que aparece na tela do seu aplicativo ou o motivo alegado..."></textarea>
-        </div>
-
-        <button type="submit" class="btn-submit-form">
-          Enviar Dados para Análise
-        </button>
-
-        <p class="form-disclaimer">
-          <strong>Nota de integridade:</strong> O envio deste formulário estabelece contato de atendimento preliminar diretamente com escritório jurídico privado. Não possuímos representação, vínculo ou endosso do suporte oficial corporativo das plataformas Meta.
+      <!-- CONTAINER DE SUCESSO EXIBIDO VIA JS (SUBSTITUI O FORMULÁRIO) -->
+      <div id="success-box" class="form-success-message">
+        <div class="success-icon">✓</div>
+        <h3 class="success-title">Dados Enviados com Sucesso!</h3>
+        <p class="success-text">
+          Agradecemos o envio das informações. Nossa equipe jurídica analisará o cenário do bloqueio imediatamente e entrará em contato através do número fornecido o mais rápido possível.
         </p>
-      </form>
+        <button type="button" onclick="redirectToWhatsapp()" class="btn-whatsapp-external" style="max-width:380px; margin:0 auto;">
+          Acelerar Atendimento via WhatsApp
+        </button>
+      </div>
+
     </div>
   </section>
 
@@ -497,6 +552,58 @@ footer p { font-size: 12px; color: var(--gray-3); line-height: 1.7; }
 </footer>
 
 <script>
+// CONFIGURAÇÃO DO ENVIO DO FORMULÁRIO VIA AJAX/FETCH (SEM REDIRECIONAR)
+const contactForm = document.getElementById('contact-form');
+const formWrapper = document.getElementById('form-wrapper');
+const successBox = document.getElementById('success-box');
+const submitBtn = document.getElementById('submit-btn');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault(); // Impede o redirecionamento padrão do navegador
+    
+    submitBtn.disabled = true;
+    submitBtn.innerText = "Enviando...";
+
+    const formData = new FormData(contactForm);
+    
+    // Transforma os dados em formato JSON para enviar à API do Web3Forms
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: json
+    })
+    .then(async (response) => {
+        let res = await response.json();
+        if (response.status == 200) {
+            // Sucesso total: esconde o formulário e exibe o bloco de sucesso
+            formWrapper.style.display = 'none';
+            successBox.style.display = 'block';
+        } else {
+            // Erro retornado pela API
+            console.log(res);
+            alert("Ocorreu um erro no envio. Por favor, utilize o botão do WhatsApp.");
+            submitBtn.disabled = false;
+            submitBtn.innerText = "Enviar Dados para Análise";
+        }
+    })
+    .catch(error => {
+        // Erro de rede ou indisponibilidade
+        console.log(error);
+        alert("Erro de conexão. Tente novamente ou fale por WhatsApp.");
+        submitBtn.disabled = false;
+        submitBtn.innerText = "Enviar Dados para Análise";
+    });
+  });
+}
+
+// REDIRECIONAMENTO WHATSAPP
 function redirectToWhatsapp() {
   const phone = "5511913473579";
   const text = encodeURIComponent("Olá, Dr. Achiles. Tive minha conta comercial do WhatsApp banida de forma injusta e preciso de uma análise jurídica para a recuperação.");
